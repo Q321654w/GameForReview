@@ -22,9 +22,9 @@ public class EndGameOperation
         _updateCollection.StopUpdate();
         
         var saveSystem = new BinarySaveSystem();
-        var scoreBoard = saveSystem.Load();
+        SaveResults(saveSystem);
         
-        SaveResults(saveSystem,scoreBoard);
+        var scoreBoard = saveSystem.Load();
         DisplayResults(scoreBoard);
     }
 
@@ -33,8 +33,9 @@ public class EndGameOperation
         _ui.ShowEndView(_score, scoreBoard);
     }
 
-    private void SaveResults(ISaveSystem saveSystem,ScoreBoard scoreBoard)
+    private void SaveResults(ISaveSystem saveSystem)
     {
+        var scoreBoard = saveSystem.Load();
         if (scoreBoard == null || scoreBoard.BestScore <= _score.CurrentScore)
         {
             saveSystem.Save(_score);

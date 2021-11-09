@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aff4493b12447fbb5a67df69606e763, type: 3}
+  m_Name: New Ball Config
+  m_EditorClassIdentifier: 
+  _ballStats:
+    _killPoints:
+      _min: 10
+      _max: 10
+    _damage:
+      _min: 1
+      _max: 1
+    _hitPoints:
+      _min: 1
+      _max: 1
+    _speed:
+      _min: 1
+      _max: 3
+    _color: {r: 0.1573993, g: 1, b: 0, a: 1}
+  _prefab: {fileID: 4461680946268610448, guid: 525feed0ffb392449a9d54484f3650e7, type: 3}

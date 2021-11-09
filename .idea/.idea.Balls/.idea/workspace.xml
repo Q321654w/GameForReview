@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="730f08cd-c961-4298-93e0-7a2ac88e5ad6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/EndGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Border.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/IScoreProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ranges/FloatRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndGameOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/IPoolReturn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpdateCollections/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NewGameOperation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/IUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ISaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BinarySaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndGameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IGameUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ranges/ColorRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Border.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/EndGameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDamageable/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDamageable/IDamageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pools/IPoolReturn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ranges/FloatRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/ISaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/IScoreProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/IGameUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NewGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="20SvP3UDH0WgUEiSLznVqtbEz0J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8920">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="8920" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="730f08cd-c961-4298-93e0-7a2ac88e5ad6" name="Default Changelist" comment="" />
+      <created>1636050777095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636050777095</updated>
+      <workItem from="1636050803124" duration="5080000" />
+      <workItem from="1636057665010" duration="1942000" />
+      <workItem from="1636127029093" duration="9541000" />
+      <workItem from="1636194995618" duration="365000" />
+      <workItem from="1636197807489" duration="2731000" />
+      <workItem from="1636209705852" duration="9610000" />
+      <workItem from="1636283099567" duration="6130000" />
+      <workItem from="1636303894463" duration="2912000" />
+      <workItem from="1636367563397" duration="8222000" />
+      <workItem from="1636385837956" duration="1260000" />
+      <workItem from="1636388816348" duration="6648000" />
+      <workItem from="1636398647136" duration="1172000" />
+      <workItem from="1636400551746" duration="3951000" />
+      <workItem from="1636441710337" duration="2297000" />
+      <workItem from="1636444071267" duration="205000" />
+      <workItem from="1636444383392" duration="272000" />
+      <workItem from="1636444683190" duration="1707000" />
+      <workItem from="1636449957323" duration="5643000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="420" height="464" key="DebuggerActiveHint" timestamp="1636442633527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="420" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1636442633527" />
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.2.center" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.2.left" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.2.right" timestamp="1636459143106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143106" />
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.3.center" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.3.left" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state width="1877" height="383" key="GridCell.Tab.3.right" timestamp="1636459143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="383" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1636459143107" />
+    <state x="752" y="236" key="RiderGenerateDialog" timestamp="1636402281621">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="236" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1636402281621" />
+  </component>
+</project>

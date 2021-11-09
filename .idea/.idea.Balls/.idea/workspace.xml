@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="730f08cd-c961-4298-93e0-7a2ac88e5ad6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Balls/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EndGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NewGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/IUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreBoard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ISaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BinarySaveSystem.cs" />
@@ -107,12 +103,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NewGameOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
       </list>
     </option>
   </component>
@@ -172,6 +169,7 @@
       <workItem from="1636444683190" duration="1707000" />
       <workItem from="1636449957323" duration="5643000" />
       <workItem from="1636460655977" duration="49000" />
+      <workItem from="1636480535498" duration="2203000" />
     </task>
     <servers />
   </component>

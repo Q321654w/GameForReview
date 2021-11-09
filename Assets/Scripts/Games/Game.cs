@@ -39,7 +39,7 @@ namespace Games
             CreatePlayer();
             CreateScore(generator);
             
-            _ui.Initialize(_score);
+            _ui.ShowScore(_score);
         }
         private void CreateGameArea()
         {
@@ -71,13 +71,9 @@ namespace Games
         {
             var statsProvider = CreateStatsProvider();
             var ballBuilder = new BallBuilder(statsProvider, _gameSettings.BallConfig.Prefab);
-            ballBuilder.Builded += OnBuilded;
+            ballBuilder.Builded += (Ball ball)=> _updateCollection.AddToUpdateQueue(ball);
             var ballProvider = new BallProvider(ballBuilder);
             return ballProvider;
-        }
-        private void OnBuilded(Ball ball)
-        {
-            _updateCollection.AddToUpdateQueue(ball);
         }
         private IBallStatsProvider CreateStatsProvider()
         {

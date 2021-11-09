@@ -10,7 +10,7 @@ public class UI : MonoBehaviour
 
     private Canvas _canvas;
 
-    public void Initialize(Score score)
+    public void ShowScore(Score score)
     {
         _canvas = Instantiate(_canvasPrefab);
         var scoreView = Instantiate(_scoreViewPrefab, _canvas.transform);

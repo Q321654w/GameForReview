@@ -4,6 +4,7 @@ using Balls.Stats;
 using Balls.Stats.Decorators;
 using IDamageables;
 using Movements;
+using Movements.DirectionProviders;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -12,10 +13,10 @@ namespace BallGenerators.Builder
     public class BallBuilder
     {
         public event Action<Ball> Builded;
-        
+
         private IBallStatsProvider _ballStatsProvider;
         private Ball _prefab;
-        
+
         private BallStats Stats => _ballStatsProvider.Stats;
 
         public BallBuilder(IBallStatsProvider ballStatsProvider, Ball prefab)
@@ -38,7 +39,7 @@ namespace BallGenerators.Builder
             var movement = GetMovement(ball);
             var damage = Stats.Damage.GetRandomValue();
             var killPoints = Stats.KillPoints.GetRandomValue();
-            
+
             ball.Initialize(health, movement, killPoints, damage, Stats.Color);
         }
 
@@ -49,7 +50,8 @@ namespace BallGenerators.Builder
 
         private Movement GetMovement(Component ball)
         {
-            return new Movement(ball.transform, Stats.Speed.GetRandomValue());
+            var directionProvider = new BallDirectionProvider();
+            return new Movement(ball.transform, Stats.Speed.GetRandomValue(), directionProvider);
         }
     }
 }

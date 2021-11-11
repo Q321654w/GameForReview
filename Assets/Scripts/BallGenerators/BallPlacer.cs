@@ -22,7 +22,6 @@ namespace BallGenerators
             var offset = new Vector2(xOffset, yOffset);
 
             _gameArea.PlaceObjectAtTopWithOffset(offset, transform);
-            ball.Initialize(Vector2.down);
         }
     }
 }

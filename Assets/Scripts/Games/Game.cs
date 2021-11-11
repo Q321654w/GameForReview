@@ -5,6 +5,7 @@ using Balls.Stats.Decorators;
 using Balls.Stats.Decorators.Realizations;
 using GameAreaes;
 using GameAreaes.Borders;
+using Movements.DirectionProviders;
 using Players;
 using Scores;
 using UnityEngine;
@@ -71,7 +72,7 @@ namespace Games
         {
             var statsProvider = CreateStatsProvider();
             var ballBuilder = new BallBuilder(statsProvider, _gameSettings.BallConfig.Prefab);
-            ballBuilder.Builded += (Ball ball)=> _updateCollection.AddToUpdateQueue(ball);
+            ballBuilder.Builded += ball=> _updateCollection.AddToUpdateQueue(ball);
             var ballProvider = new BallProvider(ballBuilder);
             return ballProvider;
         }

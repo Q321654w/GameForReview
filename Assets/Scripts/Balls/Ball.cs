@@ -2,6 +2,7 @@ using System;
 using GameAreaes.Borders;
 using IDamageables;
 using Movements;
+using Movements.DirectionProviders;
 using Pools;
 using Scores;
 using UnityEngine;
@@ -20,7 +21,6 @@ namespace Balls
         private Color _color;
 
         private Movement _movement;
-        private Vector2 _direction;
 
         private int _killPoints;
 
@@ -30,11 +30,6 @@ namespace Balls
         private void Awake()
         {
             _spriteRenderer = GetComponent<SpriteRenderer>();
-        }
-
-        public void Initialize(Vector2 direction)
-        {
-            _direction = direction;
         }
 
         public void Initialize(Health health, Movement movement, int killPoints, int damage, Color color)
@@ -70,7 +65,7 @@ namespace Balls
 
         public void GameUpdate(float deltaTime)
         {
-            _movement.Move(_direction, deltaTime);
+            _movement.Move( deltaTime);
         }
 
         private void OnCollisionEnter2D(Collision2D other)

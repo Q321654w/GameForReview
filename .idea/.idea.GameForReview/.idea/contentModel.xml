@@ -49,6 +49,10 @@
             <e p="IDamageable.cs" t="Include" />
           </e>
           <e p="Movements" t="Include">
+            <e p="DirectionProviders" t="Include">
+              <e p="BallDirectionProvider.cs" t="Include" />
+              <e p="IDirectionProvider.cs" t="Include" />
+            </e>
             <e p="Movement.cs" t="Include" />
           </e>
           <e p="Operations" t="Include">

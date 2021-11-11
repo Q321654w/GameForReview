@@ -4,7 +4,7 @@ using UpdateCollections;
 
 namespace BallGenerators
 {
-    public class BallGenerator : IGameUpdate
+    public class BallGenerator : IGameUpdate, IDisposable
     {
         public event Action<Ball> Spawned;
         
@@ -38,6 +38,12 @@ namespace BallGenerators
             _ballPlacer.Place(ball);
             
             Spawned?.Invoke(ball);
+        }
+
+        public void Dispose()
+        {
+            Spawned = null;
+            _ballProvider.Dispose();
         }
     }
 }

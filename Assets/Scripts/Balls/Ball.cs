@@ -43,7 +43,6 @@ namespace Balls
             Damage = damage;
             _spriteRenderer.color = _color;
         }
-
         private void OnDied()
         {
             PlayDieParticles();
@@ -53,7 +52,6 @@ namespace Balls
 
             ReturnToPool();
         }
-
         private void PlayDieParticles()
         {
             var particles = Instantiate(_dieParticles, transform.position, Quaternion.identity);
@@ -65,7 +63,7 @@ namespace Balls
 
         public void GameUpdate(float deltaTime)
         {
-            _movement.Move( deltaTime);
+            _movement.Move(deltaTime);
         }
 
         private void OnCollisionEnter2D(Collision2D other)

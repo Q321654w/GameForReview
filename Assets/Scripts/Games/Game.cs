@@ -1,11 +1,9 @@
 ﻿using BallGenerators;
 using BallGenerators.Builder;
-using Balls;
 using Balls.Stats.Decorators;
 using Balls.Stats.Decorators.Realizations;
 using GameAreaes;
 using GameAreaes.Borders;
-using Movements.DirectionProviders;
 using Players;
 using Scores;
 using UnityEngine;
@@ -24,6 +22,7 @@ namespace Games
         private Score _score;
         private GameArea _gameArea;
         private UpdateCollection _updateCollection;
+        private BallGenerator _ballGenerator;
         private UI _ui;
 
         private void Awake()
@@ -36,9 +35,9 @@ namespace Games
         private void Start()
         {
             CreateGameArea();
-            var generator = CreateBallGenerator();
+            _ballGenerator = CreateBallGenerator();
             CreatePlayer();
-            CreateScore(generator);
+            CreateScore(_ballGenerator);
             
             _ui.ShowScore(_score);
         }
@@ -91,6 +90,7 @@ namespace Games
 
         private void EndGame()
         {
+            _ballGenerator.Dispose();
             new EndGameOperation(_updateCollection, _score, _ui);
         }
     }

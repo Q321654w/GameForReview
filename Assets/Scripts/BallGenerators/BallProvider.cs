@@ -36,5 +36,10 @@ namespace BallGenerators
 
             return ball;
         }
+
+        public void Dispose()
+        {
+            _ballBuilder.Dispose();
+        }
     }
 }

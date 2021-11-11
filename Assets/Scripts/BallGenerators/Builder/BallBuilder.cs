@@ -53,5 +53,10 @@ namespace BallGenerators.Builder
             var directionProvider = new BallDirectionProvider();
             return new Movement(ball.transform, Stats.Speed.GetRandomValue(), directionProvider);
         }
+
+        public void Dispose()
+        {
+            Builded = null;
+        }
     }
 }

@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b455e79-3935-4388-bee4-b29383cde73f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +31,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/EndGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -52,10 +43,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +93,7 @@
       <workItem from="1636460993950" duration="237000" />
       <workItem from="1636484840878" duration="30000" />
       <workItem from="1636631971291" duration="1121000" />
+      <workItem from="1636639903854" duration="2607000" />
     </task>
     <servers />
   </component>

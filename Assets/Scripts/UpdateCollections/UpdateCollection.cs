@@ -6,41 +6,61 @@ namespace UpdateCollections
     public class UpdateCollection : MonoBehaviour
     {
         private List<IGameUpdate> _updates;
-        private bool _isUpdating;
+        private bool _isStopped;
 
         private void Awake()
         {
             _updates = new List<IGameUpdate>();
         }
 
-        public void AddToUpdateQueue(IGameUpdate gameUpdate)
+        public void AddToUpdateList(IGameUpdate gameUpdate)
         {
             _updates.Add(gameUpdate);
+            gameUpdate.UpdateRemoveRequested += OnUpdateRemoveRequested;
+        }
+
+        private void OnUpdateRemoveRequested(IGameUpdate gameUpdate)
+        {
+            gameUpdate.UpdateRemoveRequested -= OnUpdateRemoveRequested;
+            RemoveFromUpdateList(gameUpdate);
+        }
+
+        public void RemoveFromUpdateList(IGameUpdate gameUpdate)
+        {
+            var index = _updates.FindIndex(s => s == gameUpdate);
+            int lastIndex = _updates.Count - 1;
+            _updates[index] = _updates[lastIndex];
+            _updates.RemoveAt(lastIndex);
         }
 
         private void Update()
         {
-            if (!_isUpdating) return;
+            if (_isStopped) return;
 
             for (int i = 0; i < _updates.Count; i++)
             {
                 _updates[i].GameUpdate(Time.deltaTime);
             }
         }
-
-        public void StartUpdate()
-        {
-            ResumeUpdate();
-        }
-
+        
         public void StopUpdate()
         {
-            _isUpdating = false;
+            _isStopped = true;
         }
 
         public void ResumeUpdate()
         {
-            _isUpdating = true;
+            _isStopped = false;
+        }
+
+        public void Dispose()
+        {
+            StopUpdate();
+            
+            foreach (var gameUpdate in _updates)
+            {
+                gameUpdate.UpdateRemoveRequested -= OnUpdateRemoveRequested;
+            }
         }
     }
 }

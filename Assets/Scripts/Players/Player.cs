@@ -1,4 +1,5 @@
-﻿using GameAreaes;
+﻿using System;
+using GameAreaes;
 using IDamageables;
 using UnityEngine;
 using UpdateCollections;
@@ -7,6 +8,8 @@ namespace Players
 {
     public class Player : IDamageable, IGameUpdate
     {
+        public event Action<IGameUpdate> UpdateRemoveRequested;
+        
         public Health Health { get; }
 
         private readonly PlayerInput _playerInput;
@@ -36,7 +39,7 @@ namespace Players
             if (hit.collider.TryGetComponent(out IDamageable damageable))
                 damageable.Health.TakeDamage(_damage);
         }
-
+        
         public void GameUpdate(float deltaTime)
         {
             _playerInput.Update(deltaTime);

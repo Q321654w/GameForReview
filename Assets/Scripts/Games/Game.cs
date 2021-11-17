@@ -1,5 +1,7 @@
-﻿using BallGenerators;
+﻿using System;
+using BallGenerators;
 using BallGenerators.Builder;
+using Balls;
 using Balls.Stats.Decorators;
 using Balls.Stats.Decorators.Realizations;
 using GameAreaes;
@@ -24,12 +26,11 @@ namespace Games
         private UpdateCollection _updateCollection;
         private BallGenerator _ballGenerator;
         private UI _ui;
-
+        
         private void Awake()
         {
             _ui = GetComponent<UI>();
             _updateCollection = GetComponent<UpdateCollection>();
-            _updateCollection.StartUpdate();
         }
 
         private void Start()
@@ -54,7 +55,7 @@ namespace Games
             var hitPoints = _gameSettings.PlayerHitPoints;
             var player = playerBuilder.BuildPlayer(_gameArea, hitPoints, damage);
 
-            _updateCollection.AddToUpdateQueue(player);
+            _updateCollection.AddToUpdateList(player);
             player.Health.Died += EndGame;
         }
         private BallGenerator CreateBallGenerator()
@@ -63,15 +64,19 @@ namespace Games
 
             var ballPlacer = new BallPlacer(_gameArea);
             var ballGenerator = new BallGenerator(ballPlacer, ballProvider, _gameSettings.SpawnRate);
-            _updateCollection.AddToUpdateQueue(ballGenerator);
+            ballGenerator.Spawned += OnSpawned;
+            _updateCollection.AddToUpdateList(ballGenerator);
 
             return ballGenerator;
+        }
+        private void OnSpawned(Ball ball)
+        {
+            _updateCollection.AddToUpdateList(ball);
         }
         private BallProvider CreateBallProvider()
         {
             var statsProvider = CreateStatsProvider();
             var ballBuilder = new BallBuilder(statsProvider, _gameSettings.BallConfig.Prefab);
-            ballBuilder.Builded += ball=> _updateCollection.AddToUpdateQueue(ball);
             var ballProvider = new BallProvider(ballBuilder);
             return ballProvider;
         }
@@ -80,7 +85,7 @@ namespace Games
             var stopwatch = new Stopwatch();
             var statsProvider = new TimeScalingSpeed(_gameSettings.BallConfig, _gameSettings.BallSpeedScale, stopwatch);
 
-            _updateCollection.AddToUpdateQueue(stopwatch);
+            _updateCollection.AddToUpdateList(stopwatch);
             return statsProvider;
         }
         private void CreateScore(BallGenerator ballGenerator)
@@ -90,7 +95,6 @@ namespace Games
 
         private void EndGame()
         {
-            _ballGenerator.Dispose();
             new EndGameOperation(_updateCollection, _score, _ui);
         }
     }

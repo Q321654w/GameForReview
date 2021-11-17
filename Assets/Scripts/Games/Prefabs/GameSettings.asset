@@ -38,6 +38,6 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _borderOffset: 2
-  _spawnRate: 3
+  _spawnRate: 5
   _playerHitPoints: 5
   _playerDamage: 1

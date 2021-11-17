@@ -1,4 +1,5 @@
-﻿using BallGenerators.Builder;
+﻿using System;
+using BallGenerators.Builder;
 using Balls;
 using Pools;
 
@@ -35,11 +36,6 @@ namespace BallGenerators
             _pool.Add(ball);
 
             return ball;
-        }
-
-        public void Dispose()
-        {
-            _ballBuilder.Dispose();
         }
     }
 }

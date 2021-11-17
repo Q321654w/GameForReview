@@ -2,7 +2,6 @@ using System;
 using GameAreaes.Borders;
 using IDamageables;
 using Movements;
-using Movements.DirectionProviders;
 using Pools;
 using Scores;
 using UnityEngine;
@@ -14,7 +13,10 @@ namespace Balls
     [RequireComponent(typeof(SpriteRenderer))]
     public class Ball : PooledObject, IDamageable, IScoreProvider, IGameUpdate
     {
+        public event Action<IGameUpdate> UpdateRemoveRequested;
+        
         public event Action<int> Scored;
+        
         [SerializeField] private ParticleSystem _dieParticles;
 
         private SpriteRenderer _spriteRenderer;
@@ -49,8 +51,8 @@ namespace Balls
 
             Scored?.Invoke(_killPoints);
             Scored = null;
-
-            ReturnToPool();
+            
+            Disable();
         }
         private void PlayDieParticles()
         {
@@ -60,7 +62,7 @@ namespace Balls
             particlesMain.startColor = _color;
             particles.Play();
         }
-
+        
         public void GameUpdate(float deltaTime)
         {
             _movement.Move(deltaTime);
@@ -68,10 +70,16 @@ namespace Balls
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.TryGetComponent(out Border border))
+            if (other.gameObject.TryGetComponent<Border>(out _))
             {
-                ReturnToPool();
+                Disable();
             }
+        }
+
+        private void Disable()
+        {
+            UpdateRemoveRequested?.Invoke(this);
+            ReturnToPool();
         }
     }
 }

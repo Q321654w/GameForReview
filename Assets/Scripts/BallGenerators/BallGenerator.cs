@@ -4,8 +4,10 @@ using UpdateCollections;
 
 namespace BallGenerators
 {
-    public class BallGenerator : IGameUpdate, IDisposable
+    public class BallGenerator : IGameUpdate
     {
+        public event Action<IGameUpdate> UpdateRemoveRequested;
+        
         public event Action<Ball> Spawned;
         
         private BallPlacer _ballPlacer;
@@ -20,7 +22,7 @@ namespace BallGenerators
             _ballProvider = ballProvider;
             _spawnRate = 1 / spawnRate;
         }
-
+        
         public void GameUpdate(float deltaTime)
         {
             _passedTime += deltaTime;
@@ -38,12 +40,6 @@ namespace BallGenerators
             _ballPlacer.Place(ball);
             
             Spawned?.Invoke(ball);
-        }
-
-        public void Dispose()
-        {
-            Spawned = null;
-            _ballProvider.Dispose();
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using Balls;
+﻿using Balls;
 using Balls.Stats;
 using Balls.Stats.Decorators;
 using IDamageables;
@@ -12,8 +11,6 @@ namespace BallGenerators.Builder
 {
     public class BallBuilder
     {
-        public event Action<Ball> Builded;
-
         private IBallStatsProvider _ballStatsProvider;
         private Ball _prefab;
 
@@ -29,7 +26,6 @@ namespace BallGenerators.Builder
         {
             var instance = Object.Instantiate(_prefab);
             InitializeBall(instance);
-            Builded?.Invoke(instance);
             return instance;
         }
 
@@ -53,10 +49,6 @@ namespace BallGenerators.Builder
             var directionProvider = new BallDirectionProvider();
             return new Movement(ball.transform, Stats.Speed.GetRandomValue(), directionProvider);
         }
-
-        public void Dispose()
-        {
-            Builded = null;
-        }
+        
     }
 }

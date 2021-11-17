@@ -19,7 +19,7 @@ public class EndGameOperation
 
     private void EndGame()
     {
-        _updateCollection.StopUpdate();
+        _updateCollection.Dispose();
         
         var saveSystem = new BinarySaveSystem();
         SaveResults(saveSystem);

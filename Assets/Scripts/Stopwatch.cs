@@ -1,7 +1,8 @@
 ﻿using System;
+using DefaultNamespace;
 using UpdateCollections;
 
-public class Stopwatch : IGameUpdate
+public class Stopwatch : IGameUpdate, ICleanUp
 {
     public event Action<IGameUpdate> UpdateRemoveRequested;
     
@@ -10,5 +11,10 @@ public class Stopwatch : IGameUpdate
     public void GameUpdate(float deltaTime)
     {
         PassedTimeInSeconds += deltaTime;
+    }
+
+    public void CleanUp()
+    {
+        UpdateRemoveRequested?.Invoke(this);
     }
 }

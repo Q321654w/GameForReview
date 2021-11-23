@@ -1,5 +1,4 @@
-﻿using System;
-using BallGenerators.Builder;
+﻿using BallGenerators.Builder;
 using Balls;
 using Pools;
 

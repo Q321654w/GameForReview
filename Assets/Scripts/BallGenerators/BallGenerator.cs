@@ -1,10 +1,11 @@
 ﻿using System;
 using Balls;
+using DefaultNamespace;
 using UpdateCollections;
 
 namespace BallGenerators
 {
-    public class BallGenerator : IGameUpdate
+    public class BallGenerator : IGameUpdate, ICleanUp
     {
         public event Action<IGameUpdate> UpdateRemoveRequested;
         
@@ -40,6 +41,11 @@ namespace BallGenerators
             _ballPlacer.Place(ball);
             
             Spawned?.Invoke(ball);
+        }
+
+        public void CleanUp()
+        {
+            UpdateRemoveRequested?.Invoke(this);
         }
     }
 }

@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 namespace UpdateCollections
 {
-    public class UpdateCollection : MonoBehaviour
+    public class UpdateCollection : MonoBehaviour,ICleanUp
     {
         private List<IGameUpdate> _updates;
         private bool _isStopped;
@@ -53,7 +54,7 @@ namespace UpdateCollections
             _isStopped = false;
         }
 
-        public void Dispose()
+        public void CleanUp()
         {
             StopUpdate();
             

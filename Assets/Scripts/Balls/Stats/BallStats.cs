@@ -18,14 +18,7 @@ namespace Balls.Stats
         public FloatRange Speed => _speed;
         public Color Color => _color;
         
-        public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed)
-        {
-            _killPoints = killPoints;
-            _damage = damage;
-            _hitPoints = hitPoints;
-            _speed = speed;
-        }
-        public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed,Color color)
+        public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed, Color color)
         {
             _killPoints = killPoints;
             _damage = damage;

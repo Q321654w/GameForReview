@@ -1,4 +1,5 @@
 ﻿using System;
+using DefaultNamespace;
 using GameAreaes;
 using IDamageables;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UpdateCollections;
 
 namespace Players
 {
-    public class Player : IDamageable, IGameUpdate
+    public class Player : IDamageable, IGameUpdate, ICleanUp
     {
         public event Action<IGameUpdate> UpdateRemoveRequested;
         
@@ -43,6 +44,11 @@ namespace Players
         public void GameUpdate(float deltaTime)
         {
             _playerInput.Update(deltaTime);
+        }
+
+        public void CleanUp()
+        {
+            UpdateRemoveRequested?.Invoke(this);
         }
     }
 }

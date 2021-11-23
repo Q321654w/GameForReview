@@ -1,6 +1,7 @@
 ﻿using Balls;
 using Balls.Stats;
 using Balls.Stats.Decorators;
+using DefaultNamespace;
 using IDamageables;
 using Movements;
 using Movements.DirectionProviders;
@@ -12,14 +13,16 @@ namespace BallGenerators.Builder
     public class BallBuilder
     {
         private IBallStatsProvider _ballStatsProvider;
-        private Ball _prefab;
+        private readonly Ball _prefab;
+        private readonly Effect _dieEffect;
 
         private BallStats Stats => _ballStatsProvider.Stats;
 
-        public BallBuilder(IBallStatsProvider ballStatsProvider, Ball prefab)
+        public BallBuilder(IBallStatsProvider ballStatsProvider, Ball prefab, Effect dieEffect)
         {
             _ballStatsProvider = ballStatsProvider;
             _prefab = prefab;
+            _dieEffect = dieEffect;
         }
 
         public Ball BuildBall()
@@ -36,7 +39,7 @@ namespace BallGenerators.Builder
             var damage = Stats.Damage.GetRandomValue();
             var killPoints = Stats.KillPoints.GetRandomValue();
 
-            ball.Initialize(health, movement, killPoints, damage, Stats.Color);
+            ball.Initialize(health, movement, killPoints, damage, _dieEffect, Stats.Color);
         }
 
         private Health GetHealth()
@@ -49,6 +52,5 @@ namespace BallGenerators.Builder
             var directionProvider = new BallDirectionProvider();
             return new Movement(ball.transform, Stats.Speed.GetRandomValue(), directionProvider);
         }
-        
     }
 }

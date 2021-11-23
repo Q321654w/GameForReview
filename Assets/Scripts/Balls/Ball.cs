@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using GameAreaes.Borders;
 using IDamageables;
 using Movements;
@@ -14,12 +15,11 @@ namespace Balls
     public class Ball : PooledObject, IDamageable, IScoreProvider, IGameUpdate
     {
         public event Action<IGameUpdate> UpdateRemoveRequested;
-        
+
         public event Action<int> Scored;
-        
-        [SerializeField] private ParticleSystem _dieParticles;
 
         private SpriteRenderer _spriteRenderer;
+        private Effect _effect;
         private Color _color;
 
         private Movement _movement;
@@ -34,15 +34,16 @@ namespace Balls
             _spriteRenderer = GetComponent<SpriteRenderer>();
         }
 
-        public void Initialize(Health health, Movement movement, int killPoints, int damage, Color color)
+        public void Initialize(Health health, Movement movement, int killPoints, int damage, Effect effect, Color color)
         {
+            Damage = damage;
             Health = health;
             Health.Died += OnDied;
 
             _movement = movement;
             _killPoints = killPoints;
+            _effect = effect;
             _color = color;
-            Damage = damage;
             _spriteRenderer.color = _color;
         }
         private void OnDied()
@@ -51,18 +52,14 @@ namespace Balls
 
             Scored?.Invoke(_killPoints);
             Scored = null;
-            
+
             Disable();
         }
         private void PlayDieParticles()
         {
-            var particles = Instantiate(_dieParticles, transform.position, Quaternion.identity);
-
-            var particlesMain = particles.main;
-            particlesMain.startColor = _color;
-            particles.Play();
+            _effect.Play(transform,_color);
         }
-        
+
         public void GameUpdate(float deltaTime)
         {
             _movement.Move(deltaTime);

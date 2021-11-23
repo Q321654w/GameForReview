@@ -1,16 +1,16 @@
-﻿using SaveSystem;
+﻿using DefaultNamespace;
+using SaveSystem;
 using Scores;
-using UpdateCollections;
 
 public class EndGameOperation
 {
-    private readonly UpdateCollection _updateCollection;
+    private readonly ICleanUp _cleanUp;
     private readonly Score _score;
     private readonly UI _ui;
 
-    public EndGameOperation(UpdateCollection updateCollection, Score score, UI ui)
+    public EndGameOperation(ICleanUp cleanUp, Score score, UI ui)
     {
-        _updateCollection = updateCollection;
+        _cleanUp = cleanUp;
         _score = score;
         _ui = ui;
         
@@ -19,7 +19,7 @@ public class EndGameOperation
 
     private void EndGame()
     {
-        _updateCollection.Dispose();
+        _cleanUp.CleanUp();
         
         var saveSystem = new BinarySaveSystem();
         SaveResults(saveSystem);

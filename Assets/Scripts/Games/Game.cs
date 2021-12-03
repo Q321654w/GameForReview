@@ -63,11 +63,10 @@ namespace Games
 
             var damage = _gameSettings.PlayerDamage;
             var hitPoints = _gameSettings.PlayerHitPoints;
-            var player = playerBuilder.BuildPlayer(_gameArea, hitPoints, damage);
+            var player = playerBuilder.BuildPlayer(EndGame, _gameArea, hitPoints, damage);
 
             _updateCollection.AddToUpdateList(player);
-            player.Health.Died += EndGame;
-
+            
             return player;
         }
 

@@ -26,7 +26,7 @@ namespace UpdateCollections
             RemoveFromUpdateList(gameUpdate);
         }
 
-        public void RemoveFromUpdateList(IGameUpdate gameUpdate)
+        private void RemoveFromUpdateList(IGameUpdate gameUpdate)
         {
             var index = _updates.FindIndex(s => s == gameUpdate);
             int lastIndex = _updates.Count - 1;

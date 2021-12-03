@@ -23,10 +23,10 @@ namespace Balls
         private Color _color;
 
         private Movement _movement;
+        private Health _health;
 
         private int _killPoints;
 
-        public Health Health { get; private set; }
         public int Damage { get; private set; }
 
         private void Awake()
@@ -37,8 +37,8 @@ namespace Balls
         public void Initialize(Health health, Movement movement, int killPoints, int damage, Effect effect, Color color)
         {
             Damage = damage;
-            Health = health;
-            Health.Died += OnDied;
+            _health = health;
+            _health.Died += OnDied;
 
             _movement = movement;
             _killPoints = killPoints;
@@ -77,6 +77,11 @@ namespace Balls
         {
             UpdateRemoveRequested?.Invoke(this);
             ReturnToPool();
+        }
+
+        public void TakeDamage(int damage)
+        {
+            _health.TakeDamage(damage);
         }
     }
 }

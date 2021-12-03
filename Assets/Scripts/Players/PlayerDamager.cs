@@ -18,7 +18,7 @@ namespace Players
         {
             if (!collision2D.gameObject.TryGetComponent(out Ball ball)) return;
             var damage = ball.Damage;
-            _player.Health.TakeDamage(damage);
+            _player.TakeDamage(damage);
         }
     }
 }

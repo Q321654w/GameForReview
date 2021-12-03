@@ -10,8 +10,8 @@ namespace Players
     public class Player : IDamageable, IGameUpdate, ICleanUp
     {
         public event Action<IGameUpdate> UpdateRemoveRequested;
-        
-        public Health Health { get; }
+
+        private Health _health;
 
         private readonly PlayerInput _playerInput;
         private readonly GameArea _gameArea;
@@ -24,7 +24,7 @@ namespace Players
             _gameArea = gameArea;
             _playerInput.Clicked += OnClicked;
 
-            Health = health;
+            _health = health;
         }
         private void OnClicked(Vector2 mousePosition)
         {
@@ -38,7 +38,7 @@ namespace Players
                 return;
 
             if (hit.collider.TryGetComponent(out IDamageable damageable))
-                damageable.Health.TakeDamage(_damage);
+                damageable.TakeDamage(_damage);
         }
         
         public void GameUpdate(float deltaTime)
@@ -49,6 +49,11 @@ namespace Players
         public void CleanUp()
         {
             UpdateRemoveRequested?.Invoke(this);
+        }
+
+        public void TakeDamage(int damage)
+        {
+            _health.TakeDamage(damage);
         }
     }
 }

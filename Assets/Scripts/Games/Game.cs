@@ -7,6 +7,7 @@ using Balls.Stats.Decorators.Realizations;
 using DefaultNamespace;
 using GameAreaes;
 using GameAreaes.Borders;
+using IDamageables;
 using Players;
 using Scores;
 using UnityEngine;
@@ -38,17 +39,26 @@ namespace Games
         private void Start()
         {
             CreateGameArea();
-            
+
             var ballGenerator = CreateBallGenerator();
-            var player = CreatePlayer();
-            
+            var playerHealth = CreatePlayerHealth();
+            var player = CreatePlayer(playerHealth);
+
             CreateScore(ballGenerator);
 
             _cleanups.Add(player);
             _cleanups.Add(_updateCollection);
             _cleanups.Add(ballGenerator);
 
+            _ui.Initialize(_camera);
             _ui.ShowScore(_score);
+            _ui.ShowHealth(playerHealth, _gameSettings.PlayerHitPoints);
+        }
+
+        private Health CreatePlayerHealth()
+        {
+            var hitPoints = _gameSettings.PlayerHitPoints;
+            return new Health(hitPoints);
         }
 
         private void CreateGameArea()
@@ -57,16 +67,17 @@ namespace Games
             _gameArea = new GameArea(_camera, _gameSettings.BorderOffset, border);
         }
 
-        private Player CreatePlayer()
+        private Player CreatePlayer(Health playerHealth)
         {
-            var playerBuilder = new PlayerBuilder();
-
             var damage = _gameSettings.PlayerDamage;
-            var hitPoints = _gameSettings.PlayerHitPoints;
-            var player = playerBuilder.BuildPlayer(EndGame, _gameArea, hitPoints, damage);
+            var playerInput = new PlayerInput();
+
+            var player = new Player(playerInput, _gameArea, damage, playerHealth);
+            var playerDamager = new PlayerDamager(player, _gameArea.BottomBorder);
+
+            playerHealth.Died += EndGame;
 
             _updateCollection.AddToUpdateList(player);
-            
             return player;
         }
 
@@ -76,26 +87,21 @@ namespace Games
 
             var ballPlacer = new BallPlacer(_gameArea);
             var ballGenerator = new BallGenerator(ballPlacer, ballProvider, _gameSettings.SpawnRate);
-            
+
             ballGenerator.Spawned += OnSpawned;
             _updateCollection.AddToUpdateList(ballGenerator);
 
             return ballGenerator;
         }
 
-        private void OnSpawned(Ball ball)
-        {
-            _updateCollection.AddToUpdateList(ball);
-        }
-
         private BallProvider CreateBallProvider()
         {
             var statsProvider = CreateStatsProvider();
             var dieEffect = _gameSettings.BallConfig.DieEffect;
-            
+
             var ballBuilder = new BallBuilder(statsProvider, _gameSettings.BallConfig.Prefab, dieEffect);
             var ballProvider = new BallProvider(ballBuilder);
-            
+
             return ballProvider;
         }
 
@@ -108,6 +114,11 @@ namespace Games
             _cleanups.Add(stopwatch);
 
             return statsProvider;
+        }
+
+        private void OnSpawned(Ball ball)
+        {
+            _updateCollection.AddToUpdateList(ball);
         }
 
         private void CreateScore(BallGenerator ballGenerator)

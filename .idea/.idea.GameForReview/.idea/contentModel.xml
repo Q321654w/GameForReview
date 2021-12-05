@@ -40,10 +40,8 @@
             <e p="GameArea.cs" t="Include" />
           </e>
           <e p="Games" t="Include">
-            <e p="EndGameView.cs" t="Include" />
             <e p="Game.cs" t="Include" />
             <e p="GameSettings.cs" t="Include" />
-            <e p="UI.cs" t="Include" />
           </e>
           <e p="ICleanUp.cs" t="Include" />
           <e p="IDamageables" t="Include">
@@ -63,7 +61,6 @@
           </e>
           <e p="Players" t="Include">
             <e p="Player.cs" t="Include" />
-            <e p="PlayerBuilder.cs" t="Include" />
             <e p="PlayerDamager.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
           </e>
@@ -87,6 +84,10 @@
             <e p="ScoreView.cs" t="Include" />
           </e>
           <e p="Stopwatch.cs" t="Include" />
+          <e p="Ui" t="Include">
+            <e p="EndGameView.cs" t="Include" />
+            <e p="UI.cs" t="Include" />
+          </e>
           <e p="UpdateCollections" t="Include">
             <e p="IGameUpdate.cs" t="Include" />
             <e p="UpdateCollection.cs" t="Include" />

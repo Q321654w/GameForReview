@@ -1,5 +1,5 @@
 ﻿using System;
-using GameUpdates;
+using GameUpdate;
 using Ranges;
 
 namespace Common

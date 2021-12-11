@@ -8,18 +8,17 @@ namespace Installers
 {
     public class UiInstaller : MonoBehaviour
     {
-        [SerializeField] private Camera _camera;
         [SerializeField] private Canvas _canvasPrefab;
         [SerializeField] private ScoreView _scoreViewPrefab;
         [SerializeField] private EndGameView _endGameViewPrefab;
         [SerializeField] private PlayerView _playerViewPrefab;
 
-        public UI Install(Score score, Health health, int maxHitPoint)
+        public UI Install(Score score, Health health, int maxHitPoint, Camera cameraInstance)
         {
-            return CreateUi(score, health, maxHitPoint);
+            return CreateUi(score, health, maxHitPoint, cameraInstance);
         }
 
-        private UI CreateUi(Score score, Health playerHealth, int maxHitPoint)
+        private UI CreateUi(Score score, Health playerHealth, int maxHitPoint, Camera cameraInstance)
         {
             var canvas = Instantiate(_canvasPrefab);
 
@@ -32,7 +31,7 @@ namespace Installers
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);
             scoreView.Initialize(score);
 
-            var ui = new UI(canvas, playerView, endGameView, scoreView, _camera);
+            var ui = new UI(canvas, playerView, endGameView, scoreView, cameraInstance);
 
             return ui;
         }

@@ -25,6 +25,15 @@ MonoBehaviour:
     _speed:
       _min: 1
       _max: 3
-    _colorSequence: {fileID: 11400000, guid: 1b164a8101938fc469f030ebf8736787, type: 2}
+    _colorSequence:
+      _colors:
+      - {r: 1, g: 0, b: 0.8834677, a: 1}
+      - {r: 1, g: 0, b: 0, a: 1}
+      - {r: 0.028518677, g: 1, b: 0, a: 1}
+      - {r: 0.39066362, g: 0, b: 1, a: 1}
+      - {r: 0.99941266, g: 1, b: 0, a: 1}
+      - {r: 0, g: 1, b: 0.9628608, a: 1}
+      - {r: 1, g: 0.5338298, b: 0, a: 1}
+      - {r: 0, g: 0.07741523, b: 1, a: 1}
   _prefab: {fileID: 4461680946268610448, guid: 525feed0ffb392449a9d54484f3650e7, type: 3}
   _dieEffect: {fileID: 11400000, guid: 4fa26b60f93916442925c50865919a9e, type: 2}

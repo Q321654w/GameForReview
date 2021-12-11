@@ -3,6 +3,7 @@ using BallGenerators;
 using Balls;
 using Common;
 using GameAreas;
+using GameUpdate;
 using Operations;
 using Players;
 using Scores;
@@ -17,11 +18,11 @@ namespace Games
         private readonly BallGenerator _ballGenerator;
         private readonly PlayerDamager _playerDamager;
         private readonly UI _ui;
-        private readonly GameUpdates.GameUpdates _gameUpdates;
+        private readonly GameUpdates _gameUpdates;
         
         private List<ICleanUp> _cleanups;
 
-        public Game(Player player, Score score, GameArea gameArea, GameUpdates.GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerDamager playerDamager, List<ICleanUp> cleanups)
+        public Game(Player player, Score score, GameArea gameArea, GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerDamager playerDamager, List<ICleanUp> cleanups)
         {
             _score = score;
             _gameArea = gameArea;

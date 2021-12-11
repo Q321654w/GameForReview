@@ -5,6 +5,7 @@ using Balls.Stats.Decorators;
 using Balls.Stats.Decorators.Realizations;
 using Common;
 using GameAreas;
+using GameUpdate;
 using Ranges;
 using UnityEngine;
 
@@ -16,12 +17,12 @@ namespace Installers
         [SerializeField] private BallConfig _ballConfig;
         [SerializeField] private FloatRange _spawnRateRange;
 
-        public BallGenerator Install(GameArea gameArea, GameUpdates.GameUpdates gameUpdates)
+        public BallGenerator Install(GameArea gameArea, GameUpdates gameUpdates)
         {
             return CreateBallGenerator(gameArea, gameUpdates);
         }
 
-        private BallGenerator CreateBallGenerator(GameArea gameArea, GameUpdates.GameUpdates gameUpdates)
+        private BallGenerator CreateBallGenerator(GameArea gameArea, GameUpdates gameUpdates)
         {
             var ballProvider = CreateBallProvider(gameUpdates);
 
@@ -33,7 +34,7 @@ namespace Installers
             return ballGenerator;
         }
 
-        private BallProvider CreateBallProvider(GameUpdates.GameUpdates gameUpdates)
+        private BallProvider CreateBallProvider(GameUpdates gameUpdates)
         {
             var statsProvider = CreateStatsProvider(gameUpdates);
             var dieEffect = _ballConfig.DieEffect;
@@ -44,7 +45,7 @@ namespace Installers
             return ballProvider;
         }
 
-        private IBallStatsProvider CreateStatsProvider(GameUpdates.GameUpdates gameUpdates)
+        private IBallStatsProvider CreateStatsProvider(GameUpdates gameUpdates)
         {
             var stopwatch = new Stopwatch();
             var statsProvider = new TimeScalingSpeed(_ballConfig, _ballSpeedScale, stopwatch);

@@ -1,7 +1,7 @@
 ﻿using System;
 using Common;
 using GameAreas;
-using GameUpdates;
+using GameUpdate;
 using IDamageables;
 using UnityEngine;
 

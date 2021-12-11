@@ -2,7 +2,7 @@
 using Common;
 using UnityEngine;
 
-namespace GameUpdates
+namespace GameUpdate
 {
     public class GameUpdates : MonoBehaviour, ICleanUp
     {

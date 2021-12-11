@@ -4,6 +4,7 @@ using Common;
 using GameAreas;
 using GameAreas.Borders;
 using Games;
+using GameUpdate;
 using IDamageables;
 using Players;
 using Scores;
@@ -13,7 +14,7 @@ namespace Installers
 {
     public class GameInstaller : MonoBehaviour
     {
-        [SerializeField] private Camera _camera;
+        [SerializeField] private Camera _cameraPrefab;
 
         [SerializeField] private int _playerHitPoints;
         [SerializeField] private int _playerDamage;
@@ -21,7 +22,7 @@ namespace Installers
         [SerializeField] private Border _borderPrefab;
         [SerializeField] private Vector2 _borderOffset;
 
-        [SerializeField] private GameUpdates.GameUpdates _gameUpdates;
+        [SerializeField] private GameUpdates _gameUpdates;
 
         [SerializeField] private UiInstaller _uiInstaller;
         [SerializeField] private BallGeneratorInstaller _ballGeneratorInstaller;
@@ -33,7 +34,8 @@ namespace Installers
 
         private void Install()
         {
-            var gameArea = CreateGameArea();
+            var cameraInstance = Instantiate(_cameraPrefab);
+            var gameArea = CreateGameArea(cameraInstance);
             var border = CreateBorder(gameArea);
 
             var ballGenerator = _ballGeneratorInstaller.Install(gameArea, _gameUpdates);
@@ -43,7 +45,7 @@ namespace Installers
 
             var score = CreateScore(ballGenerator);
 
-            var ui = _uiInstaller.Install(score, playerHealth, _playerHitPoints);
+            var ui = _uiInstaller.Install(score, playerHealth, _playerHitPoints, cameraInstance);
 
             var cleanUps = new List<ICleanUp>()
             {
@@ -54,9 +56,9 @@ namespace Installers
             game.Start();
         }
 
-        private GameArea CreateGameArea()
+        private GameArea CreateGameArea(Camera cameraInstance)
         {
-            var gameArea = new GameArea(_camera);
+            var gameArea = new GameArea(cameraInstance);
             return gameArea;
         }
 
@@ -82,7 +84,7 @@ namespace Installers
             var playerInput = new PlayerInput();
 
             var player = new Player(playerInput, gameArea, damage, playerHealth);
-            
+
             _gameUpdates.AddToUpdateList(player);
             return player;
         }

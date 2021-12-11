@@ -1,8 +1,7 @@
 using System;
-using DefaultNamespace;
 using Effects;
 using GameAreas.Borders;
-using GameUpdates;
+using GameUpdate;
 using IDamageables;
 using Movements;
 using Pools;

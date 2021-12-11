@@ -1,7 +1,6 @@
 ﻿using System;
 using Balls;
 using Common;
-using DefaultNamespace;
 
 namespace BallGenerators
 {

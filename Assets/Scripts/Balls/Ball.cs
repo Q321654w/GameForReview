@@ -55,7 +55,7 @@ namespace Balls
             Scored?.Invoke(_killPoints);
             Scored = null;
 
-            Disable();
+            DisableSelf();
         }
 
         private void PlayDieParticles()
@@ -72,11 +72,11 @@ namespace Balls
         {
             if (other.gameObject.TryGetComponent<Border>(out _))
             {
-                Disable();
+                DisableSelf();
             }
         }
 
-        private void Disable()
+        private void DisableSelf()
         {
             UpdateRemoveRequested?.Invoke(this);
             ReturnToPool();

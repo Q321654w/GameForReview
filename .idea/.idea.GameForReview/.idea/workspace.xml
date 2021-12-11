@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b455e79-3935-4388-bee4-b29383cde73f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +44,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,8 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Effect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/EffectFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" />
@@ -110,7 +109,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UIInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" />
@@ -121,15 +119,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Ui.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
       </list>
     </option>
   </component>

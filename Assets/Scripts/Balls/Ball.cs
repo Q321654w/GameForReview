@@ -1,12 +1,13 @@
 using System;
 using DefaultNamespace;
-using GameAreaes.Borders;
+using Effects;
+using GameAreas.Borders;
+using GameUpdates;
 using IDamageables;
 using Movements;
 using Pools;
 using Scores;
 using UnityEngine;
-using UpdateCollections;
 
 namespace Balls
 {

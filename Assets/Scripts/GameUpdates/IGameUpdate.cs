@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace UpdateCollections
+namespace GameUpdates
 {
     public interface IGameUpdate
     {

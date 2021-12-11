@@ -1,20 +1,22 @@
 ﻿using System;
-using DefaultNamespace;
-using UpdateCollections;
+using GameUpdates;
 
-public class Stopwatch : IGameUpdate, ICleanUp
+namespace Common
 {
-    public event Action<IGameUpdate> UpdateRemoveRequested;
-    
-    public float PassedTimeInSeconds { get; private set; }
-    
-    public void GameUpdate(float deltaTime)
+    public class Stopwatch : IGameUpdate, ICleanUp
     {
-        PassedTimeInSeconds += deltaTime;
-    }
+        public event Action<IGameUpdate> UpdateRemoveRequested;
+    
+        public float PassedTimeInSeconds { get; private set; }
+    
+        public void GameUpdate(float deltaTime)
+        {
+            PassedTimeInSeconds += deltaTime;
+        }
 
-    public void CleanUp()
-    {
-        UpdateRemoveRequested?.Invoke(this);
+        public void CleanUp()
+        {
+            UpdateRemoveRequested?.Invoke(this);
+        }
     }
 }

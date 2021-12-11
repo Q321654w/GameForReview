@@ -1,6 +1,6 @@
 ﻿using Balls;
-using DefaultNamespace;
-using GameAreaes.Borders;
+using Common;
+using GameAreas.Borders;
 using UnityEngine;
 
 namespace Players
@@ -8,7 +8,7 @@ namespace Players
     public class PlayerDamager : ICleanUp
     {
         private readonly Player _player;
-        private Border _border;
+        private readonly Border _border;
         
         public PlayerDamager(Player player, Border border)
         {

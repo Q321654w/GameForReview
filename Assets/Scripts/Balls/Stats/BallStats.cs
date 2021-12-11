@@ -11,21 +11,21 @@ namespace Balls.Stats
         [SerializeField] private IntRange _damage;
         [SerializeField] private IntRange _hitPoints;
         [SerializeField] private FloatRange _speed;
-        [SerializeField] private Color _color;
+        [SerializeField] private ColorSequence _colorSequence;
 
         public IntRange KillPoints => _killPoints;
         public IntRange Damage => _damage;
         public IntRange HitPoints => _hitPoints;
         public FloatRange Speed => _speed;
-        public Color Color => _color;
+        public ColorSequence ColorSequence => _colorSequence;
 
-        public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed, Color color)
+        public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed, ColorSequence colorSequence)
         {
             _killPoints = killPoints;
             _damage = damage;
             _hitPoints = hitPoints;
             _speed = speed;
-            _color = color;
+            _colorSequence = colorSequence;
         }
 
         public BallStats(float speed)
@@ -39,8 +39,8 @@ namespace Balls.Stats
             var damage = ballStats1.Damage + ballStats2.Damage;
             var hitPoints = ballStats1.HitPoints + ballStats2.HitPoints;
             var killPoints = ballStats1.KillPoints + ballStats2.KillPoints;
-            var color = ballStats1.Color + ballStats2.Color;
-            return new BallStats(killPoints, damage, hitPoints, speed, color);
+            var colorSequence = ballStats1._colorSequence + ballStats2._colorSequence;
+            return new BallStats(killPoints, damage, hitPoints, speed, colorSequence);
         }
     }
 }

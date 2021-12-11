@@ -17,11 +17,14 @@
                 <e p="BallConfig.cs" t="Include" />
               </e>
             </e>
+            <e p="IBallPlacer.cs" t="Include" />
+            <e p="IBallProvider.cs" t="Include" />
           </e>
           <e p="Balls" t="Include">
             <e p="Ball.cs" t="Include" />
             <e p="Stats" t="Include">
               <e p="BallStats.cs" t="Include" />
+              <e p="ColorSequence.cs" t="Include" />
               <e p="Decorators" t="Include">
                 <e p="BallStatsDecorator.cs" t="Include" />
                 <e p="IBallStatsProvider.cs" t="Include" />
@@ -35,11 +38,12 @@
             <e p="CustomButton.cs" t="Include" />
             <e p="ICleanUp.cs" t="Include" />
             <e p="Stopwatch.cs" t="Include" />
+            <e p="Timer.cs" t="Include" />
           </e>
           <e p="Effects" t="Include">
             <e p="Effect.cs" t="Include" />
           </e>
-          <e p="GameAreaes" t="Include">
+          <e p="GameAreas" t="Include">
             <e p="Borders" t="Include">
               <e p="Border.cs" t="Include" />
             </e>
@@ -63,7 +67,7 @@
           </e>
           <e p="Movements" t="Include">
             <e p="DirectionProviders" t="Include">
-              <e p="BallDirectionProvider.cs" t="Include" />
+              <e p="ConstantDirectionProvider.cs" t="Include" />
               <e p="IDirectionProvider.cs" t="Include" />
             </e>
             <e p="Movement.cs" t="Include" />

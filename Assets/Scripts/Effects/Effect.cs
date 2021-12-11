@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace Effects
 {
     [CreateAssetMenu(menuName = "DieEffect")]
     public class Effect : ScriptableObject

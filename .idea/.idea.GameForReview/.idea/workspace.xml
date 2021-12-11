@@ -2,55 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b455e79-3935-4388-bee4-b29383cde73f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Border.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Border.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Prefabs/GameObject (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs/GameObject (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Prefabs/GameObject (1).prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs/GameObject (1).prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/GameSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/GameSettings.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Prefabs/GameSettings.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Prefabs/GameSettings.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICleanUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ICleanUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Slider.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Slider.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpdateCollections.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/IGameUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/IGameUpdate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,18 +72,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreaes/Borders/Border.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem/ISaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -81,67 +89,95 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pools/IPoolReturn.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ranges/FloatRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/IScoreProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/BallDirectionProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/GameSettings.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/IGameUpdate.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ICleanUp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Stopwatch.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CustomButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Effect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EffectFactory.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/UpdateCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Games/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerBuilder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UIInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/ColorSuqeunce.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/ColorSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UIInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
       </list>
     </option>
   </component>
@@ -166,10 +202,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12760">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="12760" />
       <method v="2" />
     </configuration>
   </component>
@@ -210,100 +246,81 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="417" height="464" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1639238739824" />
-    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom" timestamp="1639251994666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1639242204215">
+    <state width="1877" height="383" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994666" />
+    <state width="1877" height="383" key="GridCell.Tab.0.center" timestamp="1639251994666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204215" />
-    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1639242204215">
+    <state width="1877" height="383" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994666" />
+    <state width="1877" height="383" key="GridCell.Tab.0.left" timestamp="1639251994666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204215" />
-    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1639242204215">
+    <state width="1877" height="383" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994666" />
+    <state width="1877" height="383" key="GridCell.Tab.0.right" timestamp="1639251994666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204215" />
-    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994666" />
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.1.center" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.1.left" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.1.right" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.2.bottom" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.2.center" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.2.center" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.2.left" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.2.left" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.2.right" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.2.right" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.3.bottom" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.3.center" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.3.center" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.3.left" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.3.left" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state width="1877" height="383" key="GridCell.Tab.3.right" timestamp="1639242204216">
+    <state width="1877" height="383" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state width="1877" height="383" key="GridCell.Tab.3.right" timestamp="1639251994667">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="383" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639242204216" />
-    <state x="832" y="219" key="RiderGenerateDialog" timestamp="1637691501744">
+    <state width="1877" height="383" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1639251994667" />
+    <state x="832" y="219" key="RiderGenerateDialog" timestamp="1639247164768">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="832" y="219" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637691501744" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1637693906680">
+    <state x="832" y="219" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639247164768" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1639247501191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1637693906680" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639247501191" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636805994356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1636805994356" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs</url>
-          <line>23</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" initialLine="23">
-            <startOffsets>
-              <option value="614" />
-            </startOffsets>
-            <endOffsets>
-              <option value="641" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

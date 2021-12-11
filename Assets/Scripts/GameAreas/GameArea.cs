@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace GameAreaes
+namespace GameAreas
 {
     public class GameArea
     {

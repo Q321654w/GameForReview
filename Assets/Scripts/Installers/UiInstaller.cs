@@ -4,7 +4,7 @@ using Players;
 using Scores;
 using UnityEngine;
 
-namespace DefaultNamespace.Installers
+namespace Installers
 {
     public class UiInstaller : MonoBehaviour
     {

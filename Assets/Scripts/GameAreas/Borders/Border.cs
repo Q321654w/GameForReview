@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace GameAreaes.Borders
+namespace GameAreas.Borders
 {
     [RequireComponent(typeof(BoxCollider2D))]
     public class Border : MonoBehaviour

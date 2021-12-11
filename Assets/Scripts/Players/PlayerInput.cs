@@ -9,11 +9,11 @@ namespace Players
 
         public void Update(float deltaTime)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
-            {
-                var mousePosition = Input.mousePosition;
-                Clicked?.Invoke(mousePosition);
-            }
+            if (!Input.GetKeyDown(KeyCode.Mouse0)) 
+                return;
+            
+            var mousePosition = Input.mousePosition;
+            Clicked?.Invoke(mousePosition);
         }
     }
 }

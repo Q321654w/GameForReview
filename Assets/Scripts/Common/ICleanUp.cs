@@ -1,4 +1,4 @@
-﻿namespace DefaultNamespace
+﻿namespace Common
 {
     public interface ICleanUp
     {

@@ -25,6 +25,6 @@ MonoBehaviour:
     _speed:
       _min: 1
       _max: 3
-    _color: {r: 0.8584906, g: 0.69586015, b: 0.6600659, a: 1}
+    _colorSequence: {fileID: 11400000, guid: 1b164a8101938fc469f030ebf8736787, type: 2}
   _prefab: {fileID: 4461680946268610448, guid: 525feed0ffb392449a9d54484f3650e7, type: 3}
   _dieEffect: {fileID: 11400000, guid: 4fa26b60f93916442925c50865919a9e, type: 2}

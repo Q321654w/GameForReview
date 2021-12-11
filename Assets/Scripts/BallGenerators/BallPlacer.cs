@@ -1,10 +1,10 @@
 ﻿using Balls;
-using GameAreaes;
+using GameAreas;
 using UnityEngine;
 
 namespace BallGenerators
 {
-    public class BallPlacer
+    public class BallPlacer : IBallPlacer
     {
         private readonly GameArea _gameArea;
 
@@ -12,8 +12,8 @@ namespace BallGenerators
         {
             _gameArea = gameArea;
         }
-        
-        public void Place(Ball ball)
+
+        public void PlaceBall(Ball ball)
         {
             var transform = ball.transform;
 

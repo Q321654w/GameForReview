@@ -1,51 +1,41 @@
 ﻿using System;
 using Balls;
+using Common;
 using DefaultNamespace;
-using UpdateCollections;
 
 namespace BallGenerators
 {
-    public class BallGenerator : IGameUpdate, ICleanUp
+    public class BallGenerator : ICleanUp
     {
-        public event Action<IGameUpdate> UpdateRemoveRequested;
-        
         public event Action<Ball> Spawned;
-        
-        private BallPlacer _ballPlacer;
-        private BallProvider _ballProvider;
-        
-        private readonly float _spawnRate;
-        private float _passedTime;
 
-        public BallGenerator(BallPlacer ballPlacer, BallProvider ballProvider, float spawnRate)
+        private readonly IBallPlacer _ballPlacer;
+        private readonly IBallProvider _ballProvider;
+
+        private readonly RandomLoopTimer _timer;
+
+        public BallGenerator(IBallPlacer ballPlacer, IBallProvider ballProvider, RandomLoopTimer timer)
         {
             _ballPlacer = ballPlacer;
             _ballProvider = ballProvider;
-            _spawnRate = 1 / spawnRate;
-        }
-        
-        public void GameUpdate(float deltaTime)
-        {
-            _passedTime += deltaTime;
 
-            if (_passedTime < _spawnRate) return;
-
-            _passedTime = 0;
-            
-            SpawnBall();
+            _timer = timer;
+            _timer.TimIsUp += SpawnBall;
+            _timer.Resume();
         }
-        
+
         private void SpawnBall()
         {
             var ball = _ballProvider.GetBall();
-            _ballPlacer.Place(ball);
-            
+            _ballPlacer.PlaceBall(ball);
+
             Spawned?.Invoke(ball);
         }
 
         public void CleanUp()
         {
-            UpdateRemoveRequested?.Invoke(this);
+            _timer.TimIsUp -= SpawnBall;
+            _timer.CleanUp();
         }
     }
 }

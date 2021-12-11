@@ -1,11 +1,14 @@
 ﻿using UnityEngine.SceneManagement;
 
-public class NewGameOperation
+namespace Operations
 {
-    private const int GAME_SCENE = 0;
-
-    public NewGameOperation()
+    public class NewGameOperation
     {
-        SceneManager.LoadScene(GAME_SCENE);
+        private const int GAME_SCENE = 0;
+
+        public NewGameOperation()
+        {
+            SceneManager.LoadScene(GAME_SCENE);
+        }
     }
 }

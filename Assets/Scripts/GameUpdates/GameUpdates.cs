@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using DefaultNamespace;
+using Common;
 using UnityEngine;
 
-namespace UpdateCollections
+namespace GameUpdates
 {
     public class GameUpdates : MonoBehaviour, ICleanUp
     {

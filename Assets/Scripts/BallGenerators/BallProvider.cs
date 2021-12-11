@@ -4,7 +4,7 @@ using Pools;
 
 namespace BallGenerators
 {
-    public class BallProvider
+    public class BallProvider : IBallProvider
     {
         private readonly BallBuilder _ballBuilder;
         private readonly Pool<Ball> _pool;
@@ -19,7 +19,7 @@ namespace BallGenerators
         {
             return _pool.HasInactiveObjects() ? GetInactiveBall() : CreateNewBall();
         }
-        
+
         private Ball GetInactiveBall()
         {
             var ball = _pool.GetInactiveObject();
@@ -28,6 +28,7 @@ namespace BallGenerators
 
             return ball;
         }
+
         private Ball CreateNewBall()
         {
             var ball = _ballBuilder.BuildBall();

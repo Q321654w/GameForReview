@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using BallGenerators;
-using GameAreaes;
-using GameAreaes.Borders;
+using Common;
+using GameAreas;
+using GameAreas.Borders;
 using Games;
 using IDamageables;
 using Players;
 using Scores;
 using UnityEngine;
-using UpdateCollections;
 
-namespace DefaultNamespace.Installers
+namespace Installers
 {
     public class GameInstaller : MonoBehaviour
     {
@@ -21,7 +21,7 @@ namespace DefaultNamespace.Installers
         [SerializeField] private Border _borderPrefab;
         [SerializeField] private Vector2 _borderOffset;
 
-        [SerializeField] private GameUpdates _gameUpdates;
+        [SerializeField] private GameUpdates.GameUpdates _gameUpdates;
 
         [SerializeField] private UiInstaller _uiInstaller;
         [SerializeField] private BallGeneratorInstaller _ballGeneratorInstaller;

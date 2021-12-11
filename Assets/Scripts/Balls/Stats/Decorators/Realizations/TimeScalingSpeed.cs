@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using Common;
+using UnityEngine;
 
 namespace Balls.Stats.Decorators.Realizations
 {
     public class TimeScalingSpeed : BallStatsDecorator
     {
-        private AnimationCurve _curve;
-        private Stopwatch _stopwatch;
+        private readonly AnimationCurve _curve;
+        private readonly Stopwatch _stopwatch;
 
         public TimeScalingSpeed(IBallStatsProvider ballStatsProvider, AnimationCurve curve, Stopwatch stopwatch) : base(ballStatsProvider)
         {

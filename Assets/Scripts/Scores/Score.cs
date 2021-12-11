@@ -1,6 +1,6 @@
 ﻿using System;
 using BallGenerators;
-using DefaultNamespace;
+using Common;
 
 namespace Scores
 {

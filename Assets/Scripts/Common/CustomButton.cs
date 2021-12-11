@@ -2,12 +2,15 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CustomButton : MonoBehaviour, IPointerClickHandler
+namespace Common
 {
-    public event Action Pressed;
-    
-    public void OnPointerClick(PointerEventData eventData)
+    public class CustomButton : MonoBehaviour, IPointerClickHandler
     {
-        Pressed?.Invoke();
+        public event Action Pressed;
+    
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            Pressed?.Invoke();
+        }
     }
 }

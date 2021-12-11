@@ -2,9 +2,9 @@
 {
     public abstract class BallStatsDecorator : IBallStatsProvider
     {
-        protected IBallStatsProvider BallStatsProvider;
-        
-        public BallStatsDecorator(IBallStatsProvider ballStatsProvider)
+        protected readonly IBallStatsProvider BallStatsProvider;
+
+        protected BallStatsDecorator(IBallStatsProvider ballStatsProvider)
         {
             BallStatsProvider = ballStatsProvider;
         }

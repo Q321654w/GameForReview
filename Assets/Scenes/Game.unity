@@ -180,7 +180,9 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _ballConfig: {fileID: 11400000, guid: 7c767e9ff9a7a604fadb79f2059ac82a, type: 2}
-  _spawnRate: 2
+  _spawnRateRange:
+    _min: 2
+    _max: 2
 --- !u!114 &388108100
 MonoBehaviour:
   m_ObjectHideFlags: 0

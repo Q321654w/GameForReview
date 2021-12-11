@@ -1,9 +1,9 @@
 ﻿using System;
-using DefaultNamespace;
-using GameAreaes;
+using Common;
+using GameAreas;
+using GameUpdates;
 using IDamageables;
 using UnityEngine;
-using UpdateCollections;
 
 namespace Players
 {
@@ -12,7 +12,7 @@ namespace Players
         public event Action Died;
         public event Action<IGameUpdate> UpdateRemoveRequested;
 
-        private Health _health;
+        private readonly Health _health;
 
         private readonly PlayerInput _playerInput;
         private readonly GameArea _gameArea;

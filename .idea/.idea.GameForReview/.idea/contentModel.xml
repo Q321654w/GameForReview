@@ -52,7 +52,7 @@
           <e p="Games" t="Include">
             <e p="Game.cs" t="Include" />
           </e>
-          <e p="GameUpdates" t="Include">
+          <e p="GameUpdate" t="Include">
             <e p="GameUpdates.cs" t="Include" />
             <e p="IGameUpdate.cs" t="Include" />
           </e>

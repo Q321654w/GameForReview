@@ -1,20 +1,21 @@
 ﻿using System;
 using BallGenerators;
+using DefaultNamespace;
 
 namespace Scores
 {
-    public class Score
+    public class Score : ICleanUp
     {
         public event Action<int> Changed;
 
         private BallGenerator _ballGenerator;
         public int CurrentScore { get; private set; }
 
-        public Score(BallGenerator ballGenerator)
+        public Score(BallGenerator ballGenerator, int currentScore)
         {
             _ballGenerator = ballGenerator;
             _ballGenerator.Spawned += OnSpawned;
-            CurrentScore = 0;
+            CurrentScore = currentScore;
         }
 
         private void OnSpawned(IScoreProvider scoreProvider)
@@ -26,6 +27,11 @@ namespace Scores
         {
             CurrentScore += points;
             Changed?.Invoke(CurrentScore);
+        }
+
+        void ICleanUp.CleanUp()
+        {
+            _ballGenerator.Spawned -= OnSpawned;
         }
     }
 }

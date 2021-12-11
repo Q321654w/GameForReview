@@ -37,15 +37,17 @@ namespace Balls
         public void Initialize(Health health, Movement movement, int killPoints, int damage, Effect effect, Color color)
         {
             Damage = damage;
-            _health = health;
-            _health.Died += OnDied;
-
             _movement = movement;
             _killPoints = killPoints;
             _effect = effect;
+            
             _color = color;
             _spriteRenderer.color = _color;
+            
+            _health = health;
+            _health.Died += OnDied;
         }
+
         private void OnDied()
         {
             PlayDieParticles();
@@ -55,9 +57,10 @@ namespace Balls
 
             Disable();
         }
+
         private void PlayDieParticles()
         {
-            _effect.Play(transform,_color);
+            _effect.Play(transform, _color);
         }
 
         public void GameUpdate(float deltaTime)

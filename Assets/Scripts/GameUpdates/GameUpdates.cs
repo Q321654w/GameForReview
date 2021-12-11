@@ -4,10 +4,10 @@ using UnityEngine;
 
 namespace UpdateCollections
 {
-    public class UpdateCollection : MonoBehaviour,ICleanUp
+    public class GameUpdates : MonoBehaviour, ICleanUp
     {
         private List<IGameUpdate> _updates;
-        private bool _isStopped;
+        private bool _isStopped = true;
 
         private void Awake()
         {
@@ -43,7 +43,7 @@ namespace UpdateCollections
                 _updates[i].GameUpdate(Time.deltaTime);
             }
         }
-        
+
         public void StopUpdate()
         {
             _isStopped = true;
@@ -57,7 +57,7 @@ namespace UpdateCollections
         public void CleanUp()
         {
             StopUpdate();
-            
+
             foreach (var gameUpdate in _updates)
             {
                 gameUpdate.UpdateRemoveRequested -= OnUpdateRemoveRequested;

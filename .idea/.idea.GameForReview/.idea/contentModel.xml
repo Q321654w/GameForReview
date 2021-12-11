@@ -31,8 +31,14 @@
               </e>
             </e>
           </e>
-          <e p="CustomButton.cs" t="Include" />
-          <e p="Effect.cs" t="Include" />
+          <e p="Common" t="Include">
+            <e p="CustomButton.cs" t="Include" />
+            <e p="ICleanUp.cs" t="Include" />
+            <e p="Stopwatch.cs" t="Include" />
+          </e>
+          <e p="Effects" t="Include">
+            <e p="Effect.cs" t="Include" />
+          </e>
           <e p="GameAreaes" t="Include">
             <e p="Borders" t="Include">
               <e p="Border.cs" t="Include" />
@@ -41,12 +47,19 @@
           </e>
           <e p="Games" t="Include">
             <e p="Game.cs" t="Include" />
-            <e p="GameSettings.cs" t="Include" />
           </e>
-          <e p="ICleanUp.cs" t="Include" />
+          <e p="GameUpdates" t="Include">
+            <e p="GameUpdates.cs" t="Include" />
+            <e p="IGameUpdate.cs" t="Include" />
+          </e>
           <e p="IDamageables" t="Include">
             <e p="Health.cs" t="Include" />
             <e p="IDamageable.cs" t="Include" />
+          </e>
+          <e p="Installers" t="Include">
+            <e p="BallGeneratorInstaller.cs" t="Include" />
+            <e p="GameInstaller.cs" t="Include" />
+            <e p="UIInstaller.cs" t="Include" />
           </e>
           <e p="Movements" t="Include">
             <e p="DirectionProviders" t="Include">
@@ -63,6 +76,7 @@
             <e p="Player.cs" t="Include" />
             <e p="PlayerDamager.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerView.cs" t="Include" />
           </e>
           <e p="Pools" t="Include">
             <e p="IPoolReturn.cs" t="Include" />
@@ -83,14 +97,9 @@
             <e p="ScoreBoard.cs" t="Include" />
             <e p="ScoreView.cs" t="Include" />
           </e>
-          <e p="Stopwatch.cs" t="Include" />
           <e p="Ui" t="Include">
             <e p="EndGameView.cs" t="Include" />
             <e p="UI.cs" t="Include" />
-          </e>
-          <e p="UpdateCollections" t="Include">
-            <e p="IGameUpdate.cs" t="Include" />
-            <e p="UpdateCollection.cs" t="Include" />
           </e>
         </e>
       </e>

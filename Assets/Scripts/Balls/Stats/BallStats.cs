@@ -1,6 +1,7 @@
 ﻿using System;
 using Ranges;
 using UnityEngine;
+
 namespace Balls.Stats
 {
     [Serializable]
@@ -17,7 +18,7 @@ namespace Balls.Stats
         public IntRange HitPoints => _hitPoints;
         public FloatRange Speed => _speed;
         public Color Color => _color;
-        
+
         public BallStats(IntRange killPoints, IntRange damage, IntRange hitPoints, FloatRange speed, Color color)
         {
             _killPoints = killPoints;
@@ -26,11 +27,12 @@ namespace Balls.Stats
             _speed = speed;
             _color = color;
         }
+
         public BallStats(float speed)
         {
             _speed = new FloatRange(speed, speed);
         }
-        
+
         public static BallStats operator +(BallStats ballStats1, BallStats ballStats2)
         {
             var speed = ballStats1.Speed + ballStats2.Speed;
@@ -38,7 +40,7 @@ namespace Balls.Stats
             var hitPoints = ballStats1.HitPoints + ballStats2.HitPoints;
             var killPoints = ballStats1.KillPoints + ballStats2.KillPoints;
             var color = ballStats1.Color + ballStats2.Color;
-            return new BallStats(killPoints, damage, hitPoints, speed,color);
+            return new BallStats(killPoints, damage, hitPoints, speed, color);
         }
     }
 }

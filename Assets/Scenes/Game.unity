@@ -132,11 +132,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 388108102}
-  - component: {fileID: 388108101}
   - component: {fileID: 388108100}
+  - component: {fileID: 388108103}
+  - component: {fileID: 388108101}
   - component: {fileID: 388108099}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Installer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,12 +152,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 388108098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38bb3067bcbe43ce8cd1b5f06401e0da, type: 3}
+  m_Script: {fileID: 11500000, guid: 57d41bc493494f74b6d21697b5f9dca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 2089361538}
-  _borderPrefab: {fileID: 3565091499325011070, guid: 59587ed72aabd0c48a04e2798b0e5e88, type: 3}
-  _gameSettings: {fileID: 11400000, guid: b255cfaed8f22ee45810f6eb0cab13d3, type: 2}
+  _ballSpeedScale:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.26292205
+      outSlope: 0.26292205
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 30.562687
+      value: 8.0356045
+      inSlope: 0.26292205
+      outSlope: 0.26292205
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _ballConfig: {fileID: 11400000, guid: 7c767e9ff9a7a604fadb79f2059ac82a, type: 2}
+  _spawnRate: 2
 --- !u!114 &388108100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,13 +202,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 388108098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca8f53f18b944919ac77ded0a783d48, type: 3}
+  m_Script: {fileID: 11500000, guid: e75322740d164f19ba70189884a47d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _camera: {fileID: 2089361538}
+  _canvasPrefab: {fileID: 5192911465339598983, guid: c79f8103cb624e10976a807c9ab68662, type: 3}
   _scoreViewPrefab: {fileID: 8736137104240689364, guid: 312f6c0772fcd914cafeb45fef4fa19a, type: 3}
   _endGameViewPrefab: {fileID: 3599804544416053636, guid: 2a757d582c3d4181868cb2d6cb8f7b7d, type: 3}
-  _canvasPrefab: {fileID: 5192911465339598983, guid: c79f8103cb624e10976a807c9ab68662, type: 3}
-  _sliderPrefab: {fileID: 2057741190536336609, guid: 4dfd60a79dc9571438917b74ba56b17e, type: 3}
+  _playerViewPrefab: {fileID: -2898388913722544814, guid: 4dfd60a79dc9571438917b74ba56b17e, type: 3}
 --- !u!4 &388108102
 Transform:
   m_ObjectHideFlags: 0
@@ -199,6 +224,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &388108103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388108098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6734df377ada439f92d3bed5d87eb057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 2089361538}
+  _playerHitPoints: 5
+  _playerDamage: 1
+  _borderPrefab: {fileID: 3565091499325011070, guid: 59587ed72aabd0c48a04e2798b0e5e88, type: 3}
+  _borderOffset: {x: 0, y: -2}
+  _gameUpdates: {fileID: 388108100}
+  _uiInstaller: {fileID: 388108101}
+  _ballGeneratorInstaller: {fileID: 388108099}
 --- !u!1 &2089361537
 GameObject:
   m_ObjectHideFlags: 0

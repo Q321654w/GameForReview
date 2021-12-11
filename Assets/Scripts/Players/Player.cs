@@ -9,6 +9,7 @@ namespace Players
 {
     public class Player : IDamageable, IGameUpdate, ICleanUp
     {
+        public event Action Died;
         public event Action<IGameUpdate> UpdateRemoveRequested;
 
         private Health _health;
@@ -25,11 +26,14 @@ namespace Players
             _playerInput.Clicked += OnClicked;
 
             _health = health;
+            _health.Died += OnDied;
         }
+        
         private void OnClicked(Vector2 mousePosition)
         {
             Attack(mousePosition);
         }
+        
         private void Attack(Vector2 mousePosition)
         {
             var hit = _gameArea.GetObjectAt(mousePosition);
@@ -46,14 +50,21 @@ namespace Players
             _playerInput.Update(deltaTime);
         }
 
-        public void CleanUp()
+        void ICleanUp.CleanUp()
         {
+            _health.Died -= OnDied;
+            _playerInput.Clicked -= OnClicked;
             UpdateRemoveRequested?.Invoke(this);
         }
 
         public void TakeDamage(int damage)
         {
             _health.TakeDamage(damage);
+        }
+
+        private void OnDied()
+        {
+            Died?.Invoke();
         }
     }
 }

@@ -2,7 +2,6 @@
 using BallGenerators;
 using Common;
 using GameAreas;
-using GameAreas.Borders;
 using Games;
 using GameUpdate;
 using IDamageables;
@@ -19,8 +18,8 @@ namespace Installers
         [SerializeField] private int _playerHitPoints;
         [SerializeField] private int _playerDamage;
 
-        [SerializeField] private Border _borderPrefab;
-        [SerializeField] private Vector2 _borderOffset;
+        [SerializeField] private PlayerView _playerViewPrefab;
+        [SerializeField] private Vector2 _playerOffset;
 
         [SerializeField] private GameUpdates _gameUpdates;
 
@@ -36,12 +35,11 @@ namespace Installers
         {
             var cameraInstance = Instantiate(_cameraPrefab);
             var gameArea = CreateGameArea(cameraInstance);
-            var border = CreateBorder(gameArea);
 
             var ballGenerator = _ballGeneratorInstaller.Install(gameArea, _gameUpdates);
             var playerHealth = CreatePlayerHealth();
             var player = CreatePlayer(playerHealth, gameArea);
-            var playerDamager = CreatePlayerDamager(player, border);
+            var playerDamager = CreatePlayerView(player, gameArea);
 
             var score = CreateScore(ballGenerator);
 
@@ -49,11 +47,18 @@ namespace Installers
 
             var cleanUps = new List<ICleanUp>()
             {
-                player, playerDamager, ui, _gameUpdates, ballGenerator, score
+                player, ui, _gameUpdates, ballGenerator, score
             };
 
             var game = new Game(player, score, gameArea, _gameUpdates, ui, ballGenerator, playerDamager, cleanUps);
             game.Start();
+            
+            DestroyInstallers();
+        }
+
+        private void DestroyInstallers()
+        {
+            Destroy(gameObject);
         }
 
         private GameArea CreateGameArea(Camera cameraInstance)
@@ -62,14 +67,14 @@ namespace Installers
             return gameArea;
         }
 
-        private Border CreateBorder(GameArea gameArea)
+        private PlayerView CreatePlayerView(Player player, GameArea gameArea)
         {
-            var border = Instantiate(_borderPrefab);
+            var playerView = Instantiate(_playerViewPrefab);
             var size = new Vector2(gameArea.Size.x, 1);
-            border.Initialize(size);
+            playerView.Initialize(player, size);
 
-            gameArea.PlaceObjectAtBottomWithOffset(_borderOffset, border.transform);
-            return border;
+            gameArea.PlaceObjectAtBottomBorderWithOffset(_playerOffset, playerView.transform);
+            return playerView;
         }
 
         private Health CreatePlayerHealth()
@@ -87,11 +92,6 @@ namespace Installers
 
             _gameUpdates.AddToUpdateList(player);
             return player;
-        }
-
-        private PlayerDamager CreatePlayerDamager(Player player, Border border)
-        {
-            return new PlayerDamager(player, border);
         }
 
         private Score CreateScore(BallGenerator ballGenerator)

@@ -16,12 +16,13 @@ namespace BallGenerators
         public void PlaceBall(Ball ball)
         {
             var transform = ball.transform;
-
-            var xOffset = _gameArea.GetRandomXPosition();
+            
+            var ballSizeOffset = transform.localScale.x / 2;
+            var xOffset = _gameArea.GetRandomXInAreaWithOffsetAtBorders(ballSizeOffset);
             var yOffset = ball.transform.localScale.y / 2;
             var offset = new Vector2(xOffset, yOffset);
 
-            _gameArea.PlaceObjectAtTopWithOffset(offset, transform);
+            _gameArea.PlaceObjectAtTopBorderWithOffset(offset, transform);
         }
     }
 }

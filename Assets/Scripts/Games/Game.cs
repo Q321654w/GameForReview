@@ -16,20 +16,20 @@ namespace Games
         private readonly Score _score;
         private readonly GameArea _gameArea;
         private readonly BallGenerator _ballGenerator;
-        private readonly PlayerDamager _playerDamager;
+        private readonly PlayerView _playerView;
         private readonly UI _ui;
         private readonly GameUpdates _gameUpdates;
         
         private List<ICleanUp> _cleanups;
 
-        public Game(Player player, Score score, GameArea gameArea, GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerDamager playerDamager, List<ICleanUp> cleanups)
+        public Game(Player player, Score score, GameArea gameArea, GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerView playerView, List<ICleanUp> cleanups)
         {
             _score = score;
             _gameArea = gameArea;
             _gameUpdates = gameUpdates;
             _ui = ui;
             _ballGenerator = ballGenerator;
-            _playerDamager = playerDamager;
+            _playerView = playerView;
             _cleanups = cleanups;
             _player = player;
         }

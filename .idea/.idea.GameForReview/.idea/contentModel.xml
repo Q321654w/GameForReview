@@ -44,9 +44,6 @@
             <e p="Effect.cs" t="Include" />
           </e>
           <e p="GameAreas" t="Include">
-            <e p="Borders" t="Include">
-              <e p="Border.cs" t="Include" />
-            </e>
             <e p="GameArea.cs" t="Include" />
           </e>
           <e p="Games" t="Include">
@@ -77,8 +74,8 @@
             <e p="NewGameOperation.cs" t="Include" />
           </e>
           <e p="Players" t="Include">
+            <e p="HealthView.cs" t="Include" />
             <e p="Player.cs" t="Include" />
-            <e p="PlayerDamager.cs" t="Include" />
             <e p="PlayerInput.cs" t="Include" />
             <e p="PlayerView.cs" t="Include" />
           </e>

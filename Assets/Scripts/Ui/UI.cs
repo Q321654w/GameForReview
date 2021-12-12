@@ -8,14 +8,14 @@ public class UI : ICleanUp
 {
     private readonly Camera _camera;
     private readonly Canvas _canvas;
-    private readonly PlayerView _playerView;
+    private readonly HealthView _healthView;
     private readonly EndGameView _endGameView;
     private readonly ScoreView _scoreView;
 
-    public UI(Canvas canvas, PlayerView playerView, EndGameView endGameView, ScoreView scoreView, Camera camera)
+    public UI(Canvas canvas, HealthView healthView, EndGameView endGameView, ScoreView scoreView, Camera camera)
     {
         _canvas = canvas;
-        _playerView = playerView;
+        _healthView = healthView;
         _endGameView = endGameView;
         _scoreView = scoreView;
         _camera = camera;
@@ -32,7 +32,7 @@ public class UI : ICleanUp
     void ICleanUp.CleanUp()
     {
         _scoreView.CleanUp();
-        _playerView.CleanUp();
+        _healthView.CleanUp();
         _scoreView.CleanUp();
     }
 

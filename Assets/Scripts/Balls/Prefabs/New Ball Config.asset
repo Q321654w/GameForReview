@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ballStats:
     _killPoints:
-      _min: 10
-      _max: 10
+      _min: 1
+      _max: 3
     _damage:
       _min: 1
       _max: 1
@@ -24,7 +24,7 @@ MonoBehaviour:
       _max: 1
     _speed:
       _min: 1
-      _max: 3
+      _max: 2
     _colorSequence:
       _colors:
       - {r: 1, g: 0, b: 0.8834677, a: 1}

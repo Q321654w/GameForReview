@@ -1,4 +1,5 @@
 ﻿using Common;
+using Games;
 using SaveSystem;
 using Scores;
 
@@ -6,13 +7,13 @@ namespace Operations
 {
     public class EndGameOperation
     {
-        private readonly ICleanUp _cleanUp;
+        private readonly Game _game;
         private readonly Score _score;
         private readonly UI _ui;
 
-        public EndGameOperation(ICleanUp cleanUp, Score score, UI ui)
+        public EndGameOperation(Game game, Score score, UI ui)
         {
-            _cleanUp = cleanUp;
+            _game = game;
             _score = score;
             _ui = ui;
         
@@ -21,7 +22,7 @@ namespace Operations
 
         private void EndGame()
         {
-            _cleanUp.CleanUp();
+            _game.CleanUp();
         
             var saveSystem = new BinarySaveSystem();
             SaveResults(saveSystem);

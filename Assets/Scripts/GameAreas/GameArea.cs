@@ -17,14 +17,14 @@ namespace GameAreas
             Size = _halfSize * 2;
         }
 
-        public float GetRandomXPosition()
+        public float GetRandomXInAreaWithOffsetAtBorders(float offset)
         {
             var xPosition = _camera.transform.position.x;
 
-            return Random.Range(xPosition - _halfSize.x, xPosition + _halfSize.x);
+            return Random.Range(xPosition - _halfSize.x + offset, xPosition + _halfSize.x - offset);
         }
-
-        public void PlaceObjectAtBottomWithOffset(Vector2 offset, Transform transform)
+        
+        public void PlaceObjectAtBottomBorderWithOffset(Vector2 offset, Transform transform)
         {
             var x = _camera.transform.position.x;
             var position = new Vector2(x, GetBottomY()) + offset;
@@ -37,7 +37,7 @@ namespace GameAreas
             return _camera.transform.position.y - _halfSize.y;
         }
         
-        public void PlaceObjectAtTopWithOffset(Vector2 offset, Transform transform)
+        public void PlaceObjectAtTopBorderWithOffset(Vector2 offset, Transform transform)
         {
             var x = _camera.transform.position.x;
             var position = new Vector2(x, GetTopY()) + offset;

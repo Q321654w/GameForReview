@@ -1,32 +1,29 @@
-﻿using Common;
-using IDamageables;
+﻿using IDamageables;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Players
 {
-    public class PlayerView : MonoBehaviour, ICleanUp
+    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(Rigidbody2D))]
+    public class PlayerView : MonoBehaviour, IDamageable
     {
-        [SerializeField] private Slider _slider;
-        private Health _health;
+        private BoxCollider2D _boxCollider2D;
+        private Player _player;
 
-        public void Initialize(Health health, int maxValue)
+        private void Awake()
         {
-            _slider.maxValue = maxValue;
-            _slider.value = maxValue;
-            
-            _health = health;
-            _health.Changed += OnChanged;
+            _boxCollider2D = GetComponent<BoxCollider2D>();
         }
 
-        private void OnChanged(int value)
+        public void Initialize(Player player, Vector2 size)
         {
-            _slider.value = value;
+            _player = player;
+            _boxCollider2D.size = size;
         }
 
-        public void CleanUp()
+        public void TakeDamage(int damage)
         {
-            _health.Changed -= OnChanged;
+            _player.TakeDamage(damage);
         }
     }
 }

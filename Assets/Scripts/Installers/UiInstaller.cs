@@ -11,7 +11,7 @@ namespace Installers
         [SerializeField] private Canvas _canvasPrefab;
         [SerializeField] private ScoreView _scoreViewPrefab;
         [SerializeField] private EndGameView _endGameViewPrefab;
-        [SerializeField] private PlayerView _playerViewPrefab;
+        [SerializeField] private HealthView _healthViewPrefab;
 
         public UI Install(Score score, Health health, int maxHitPoint, Camera cameraInstance)
         {
@@ -25,7 +25,7 @@ namespace Installers
             var endGameView = Instantiate(_endGameViewPrefab, canvas.transform);
             endGameView.gameObject.SetActive(false);
 
-            var playerView = Instantiate(_playerViewPrefab, canvas.transform);
+            var playerView = Instantiate(_healthViewPrefab, canvas.transform);
             playerView.Initialize(playerHealth, maxHitPoint);
 
             var scoreView = Instantiate(_scoreViewPrefab, canvas.transform);

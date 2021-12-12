@@ -1,6 +1,5 @@
 using System;
 using Effects;
-using GameAreas.Borders;
 using GameUpdate;
 using IDamageables;
 using Movements;
@@ -26,8 +25,7 @@ namespace Balls
         private Health _health;
 
         private int _killPoints;
-
-        public int Damage { get; private set; }
+        private int _damage;
 
         private void Awake()
         {
@@ -36,14 +34,14 @@ namespace Balls
 
         public void Initialize(Health health, Movement movement, int killPoints, int damage, Effect effect, Color color)
         {
-            Damage = damage;
+            _damage = damage;
             _movement = movement;
             _killPoints = killPoints;
             _effect = effect;
-            
+
             _color = color;
             _spriteRenderer.color = _color;
-            
+
             _health = health;
             _health.Died += OnDied;
         }
@@ -70,8 +68,9 @@ namespace Balls
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (other.gameObject.TryGetComponent<Border>(out _))
+            if (other.gameObject.TryGetComponent<IDamageable>(out var damageable))
             {
+                damageable.TakeDamage(_damage);
                 DisableSelf();
             }
         }

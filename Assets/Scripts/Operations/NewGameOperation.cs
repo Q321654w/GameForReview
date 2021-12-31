@@ -6,7 +6,7 @@ namespace Operations
     {
         private const int GAME_SCENE = 0;
 
-        public NewGameOperation()
+        public void Execute()
         {
             SceneManager.LoadScene(GAME_SCENE);
         }

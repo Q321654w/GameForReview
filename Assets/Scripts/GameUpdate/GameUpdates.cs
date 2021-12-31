@@ -29,16 +29,17 @@ namespace GameUpdate
         private void RemoveFromUpdateList(IGameUpdate gameUpdate)
         {
             var index = _updates.FindIndex(s => s == gameUpdate);
-            int lastIndex = _updates.Count - 1;
+            var lastIndex = _updates.Count - 1;
             _updates[index] = _updates[lastIndex];
             _updates.RemoveAt(lastIndex);
         }
 
         private void Update()
         {
-            if (_isStopped) return;
+            if (_isStopped) 
+                return;
 
-            for (int i = 0; i < _updates.Count; i++)
+            for (var i = 0; i < _updates.Count; i++)
             {
                 _updates[i].GameUpdate(Time.deltaTime);
             }
@@ -56,8 +57,6 @@ namespace GameUpdate
 
         public void CleanUp()
         {
-            StopUpdate();
-
             foreach (var gameUpdate in _updates)
             {
                 gameUpdate.UpdateRemoveRequested -= OnUpdateRemoveRequested;

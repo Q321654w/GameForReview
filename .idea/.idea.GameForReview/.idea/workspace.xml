@@ -2,33 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b455e79-3935-4388-bee4-b29383cde73f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/HealthView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Players/HealthView.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs/GameObject (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Prefabs/GameObject (1).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/EndGaneView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/EndGaneView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/PlayerView.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/PlayerView.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/ScoreView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/ScoreView.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
@@ -38,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe4.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe5.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe6.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" />
@@ -125,25 +108,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreas/Borders/Border.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdates/IGameUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UIInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/Ui.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/PlayerDamager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/HealthView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Players/View.cs" />
@@ -152,9 +129,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Operations/ShowPauseMenuOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" />
       </list>
     </option>
   </component>
@@ -291,10 +275,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="832" y="219" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639308647427" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1639247501191">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1639494418314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639247501191" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639494418314" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1636805994356">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

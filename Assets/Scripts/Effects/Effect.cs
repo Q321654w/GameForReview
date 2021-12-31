@@ -2,7 +2,7 @@
 
 namespace Effects
 {
-    [CreateAssetMenu(menuName = "DieEffect")]
+    [CreateAssetMenu(menuName = "Effect")]
     public class Effect : ScriptableObject
     {
         [SerializeField] private ParticleSystem _particleSystem;

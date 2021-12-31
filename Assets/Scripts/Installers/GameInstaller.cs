@@ -5,7 +5,9 @@ using GameAreas;
 using Games;
 using GameUpdate;
 using IDamageables;
+using Operations;
 using Players;
+using SaveSystem;
 using Scores;
 using UnityEngine;
 
@@ -39,7 +41,7 @@ namespace Installers
             var ballGenerator = _ballGeneratorInstaller.Install(gameArea, _gameUpdates);
             var playerHealth = CreatePlayerHealth();
             var player = CreatePlayer(playerHealth, gameArea);
-            var playerDamager = CreatePlayerView(player, gameArea);
+            var playerView = CreatePlayerView(player, gameArea);
 
             var score = CreateScore(ballGenerator);
 
@@ -50,9 +52,11 @@ namespace Installers
                 player, ui, _gameUpdates, ballGenerator, score
             };
 
-            var game = new Game(player, score, gameArea, _gameUpdates, ui, ballGenerator, playerDamager, cleanUps);
+
+            var endGameOperation = new EndGameOperation(cleanUps, score, ui, new BinarySaveSystem());
+            var game = new Game(player, score, gameArea, _gameUpdates, ui, ballGenerator, playerView, endGameOperation);
             game.Start();
-            
+
             DestroyInstallers();
         }
 

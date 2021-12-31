@@ -1,4 +1,5 @@
-﻿using Common;
+﻿using System.Collections.Generic;
+using Common;
 using Games;
 using SaveSystem;
 using Scores;
@@ -7,22 +8,25 @@ namespace Operations
 {
     public class EndGameOperation
     {
-        private readonly Game _game;
+        private readonly List<ICleanUp> _cleanUps;
         private readonly Score _score;
         private readonly UI _ui;
+        private readonly ISaveSystem _saveSystem;
 
-        public EndGameOperation(Game game, Score score, UI ui)
+        public EndGameOperation(List<ICleanUp> cleanUps, Score score, UI ui, ISaveSystem saveSystem)
         {
-            _game = game;
+            _cleanUps = cleanUps;
             _score = score;
             _ui = ui;
-        
-            EndGame();
+            _saveSystem = saveSystem;
         }
 
-        private void EndGame()
+        public void Execute()
         {
-            _game.CleanUp();
+            foreach (var cleanUp in _cleanUps)
+            {
+                cleanUp.CleanUp();
+            }
         
             var saveSystem = new BinarySaveSystem();
             SaveResults(saveSystem);

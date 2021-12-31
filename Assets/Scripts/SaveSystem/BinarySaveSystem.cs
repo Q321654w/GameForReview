@@ -13,18 +13,19 @@ namespace SaveSystem
         {
             var scoreBoard = new ScoreBoard(score.CurrentScore);
             
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            var binaryFormatter = new BinaryFormatter();
 
-            using FileStream stream = new FileStream(_path, FileMode.Create);
+            using var stream = new FileStream(_path, FileMode.Create);
             binaryFormatter.Serialize(stream, scoreBoard);
         }
 
         public ScoreBoard Load()
         {
-            if (!File.Exists(_path)) return null;
+            if (!File.Exists(_path)) 
+                return null;
             
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            using FileStream stream = new FileStream(_path, FileMode.Open);
+            var binaryFormatter = new BinaryFormatter();
+            using var stream = new FileStream(_path, FileMode.Open);
             
             var scoreBoard = binaryFormatter.Deserialize(stream) as ScoreBoard;
             return scoreBoard;

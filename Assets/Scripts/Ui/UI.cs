@@ -1,5 +1,6 @@
 ﻿using Common;
 using Games;
+using Operations;
 using Players;
 using Scores;
 using UnityEngine;
@@ -19,13 +20,14 @@ public class UI : ICleanUp
         _endGameView = endGameView;
         _scoreView = scoreView;
         _camera = camera;
-        
+
         _canvas.worldCamera = camera;
     }
 
     public void ShowEndView(Score score, ScoreBoard scoreBoard)
     {
-        _endGameView.Initialize(score, scoreBoard);
+        var newGameOperation = new NewGameOperation();
+        _endGameView.Initialize(score, scoreBoard, newGameOperation);
         _endGameView.gameObject.SetActive(true);
     }
 
@@ -35,5 +37,4 @@ public class UI : ICleanUp
         _healthView.CleanUp();
         _scoreView.CleanUp();
     }
-
 }

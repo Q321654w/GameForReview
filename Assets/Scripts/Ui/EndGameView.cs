@@ -12,8 +12,11 @@ namespace Games
         [SerializeField] private Text _currentScore;
         [SerializeField] private CustomButton _restartButton;
 
-        public void Initialize(Score score, ScoreBoard scoreBoard)
+        private NewGameOperation _newGameOperation;
+
+        public void Initialize(Score score, ScoreBoard scoreBoard,NewGameOperation newGameOperation)
         {
+            _newGameOperation = newGameOperation;
             _bestScore.text = "Best Score : " + scoreBoard.BestScore;
             _currentScore.text = "Current Score : " + score.CurrentScore;
             _restartButton.Pressed += RestartGame;
@@ -21,7 +24,7 @@ namespace Games
 
         private void RestartGame()
         {
-            new NewGameOperation();
+            _newGameOperation.Execute();
         }
     }
 }

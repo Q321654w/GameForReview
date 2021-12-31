@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using BallGenerators;
+﻿using BallGenerators;
 using Balls;
 using Common;
 using GameAreas;
@@ -20,9 +19,9 @@ namespace Games
         private readonly UI _ui;
         private readonly GameUpdates _gameUpdates;
         
-        private List<ICleanUp> _cleanups;
+        private readonly EndGameOperation _endGameOperation;
 
-        public Game(Player player, Score score, GameArea gameArea, GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerView playerView, List<ICleanUp> cleanups)
+        public Game(Player player, Score score, GameArea gameArea, GameUpdates gameUpdates, UI ui, BallGenerator ballGenerator, PlayerView playerView, EndGameOperation endGameOperation)
         {
             _score = score;
             _gameArea = gameArea;
@@ -30,7 +29,7 @@ namespace Games
             _ui = ui;
             _ballGenerator = ballGenerator;
             _playerView = playerView;
-            _cleanups = cleanups;
+            _endGameOperation = endGameOperation;
             _player = player;
         }
 
@@ -50,17 +49,12 @@ namespace Games
         private void EndGame()
         {
             _gameUpdates.StopUpdate();
-            new EndGameOperation(this, _score, _ui);
+            _endGameOperation.Execute();
         }
 
         public void CleanUp()
         {
             _ballGenerator.Spawned -= OnSpawned;
-            
-            foreach (var cleanup in _cleanups)
-            {
-                cleanup.CleanUp();
-            }
         }
     }
 }

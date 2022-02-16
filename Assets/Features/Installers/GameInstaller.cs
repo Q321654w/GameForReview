@@ -51,8 +51,7 @@ namespace Installers
             {
                 player, ui, _gameUpdates, ballGenerator, score
             };
-
-
+            
             var endGameOperation = new EndGameOperation(cleanUps, score, ui, new BinarySaveSystem());
             var game = new Game(player, score, gameArea, _gameUpdates, ui, ballGenerator, playerView, endGameOperation);
             game.Start();

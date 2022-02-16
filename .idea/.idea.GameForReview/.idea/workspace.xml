@@ -2,152 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b455e79-3935-4388-bee4-b29383cde73f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallGenerator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallGenerator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallPlacer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallPlacer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallPlacer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/BallProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/BallProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/BallBuilder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/BallBuilder.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/BallBuilder.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/BallConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/BallConfig.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/BallConfig.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/New Effect.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/New Effect.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/New Effect.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/New Effect.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/Particle System.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/Builder/Configs/Particle System.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/Builder/Configs/Particle System.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/IBallPlacer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallPlacer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/IBallPlacer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/IBallProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallGenerators/IBallProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/BallGenerators/IBallProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Ball.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Ball.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Ball.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/Circle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Prefabs/Circle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/Circle.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Prefabs/Circle.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Prefabs/New Ball Config.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Prefabs/New Ball Config.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Prefabs/New Ball Config.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/BallStats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/BallStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/BallStats.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/ColorSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/ColorSequence.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/ColorSequence.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/BallStatsDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/BallStatsDecorator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/BallStatsDecorator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/IBallStatsProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/IBallStatsProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/IBallStatsProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/Realizations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/Realizations/TimeScalingSpeed.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/CustomButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/CustomButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/CustomButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/ICleanUp.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/ICleanUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/ICleanUp.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/Stopwatch.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Stopwatch.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/Stopwatch.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/Timer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Common/Timer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Common/Timer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Effects.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Effects/Effect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Effects/Effect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Effects/Effect.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameAreas.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameAreas/GameArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameAreas/GameArea.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameAreas/GameArea.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameUpdate.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameUpdate/GameUpdates.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameUpdate/GameUpdates.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameUpdate/IGameUpdate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameUpdate/IGameUpdate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/GameUpdate/IGameUpdate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Games.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Games/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Game.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Games/Game.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Games/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Games/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IDamageables.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/IDamageables.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/IDamageables/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/IDamageables/Health.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/IDamageables/IDamageable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IDamageables/IDamageable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/IDamageables/IDamageable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/BallGeneratorInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/BallGeneratorInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/BallGeneratorInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/GameInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/GameInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/UiInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/UiInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/UiInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/DirectionProviders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/DirectionProviders/ConstantDirectionProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/ConstantDirectionProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/DirectionProviders/ConstantDirectionProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/DirectionProviders/IDirectionProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/DirectionProviders/IDirectionProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/DirectionProviders/IDirectionProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movements/Movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Movements/Movement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations/EndGameOperation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/EndGameOperation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations/EndGameOperation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations/NewGameOperation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Operations/NewGameOperation.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations/NewGameOperation.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/HealthView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/HealthView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/HealthView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/HealthView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Player.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/Player.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/PlayerInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerInput.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/PlayerInput.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/PlayerView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/PlayerView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/PlayerView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Prefabs/PlayerView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/Prefabs/PlayerView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Players/Prefabs/PlayerView.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Players/Prefabs/PlayerView.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/IPoolReturn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/IPoolReturn.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/IPoolReturn.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/IPoolReturn.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/Pool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/Pool.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/Pool.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/PooledObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pools/PooledObject.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Pools/PooledObject.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ranges.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ranges.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ranges/FloatRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ranges/FloatRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ranges/FloatRange.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ranges/FloatRange.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ranges/IntRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ranges/IntRange.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ranges/IntRange.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/SaveSystem.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/SaveSystem/BinarySaveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/BinarySaveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/SaveSystem/BinarySaveSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/ISaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/SaveSystem/ISaveSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SaveSystem/ISaveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/SaveSystem/ISaveSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/IScoreProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/IScoreProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/IScoreProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/IScoreProvider.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/Score.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/Score.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/Score.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/ScoreBoard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreBoard.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/ScoreBoard.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/ScoreView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scores/ScoreView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Scores/ScoreView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/EndGameView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/EndGameView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Canvas.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/Canvas.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/EndGaneView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/EndGaneView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/EndGaneView.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/EndGaneView.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/HealthView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/HealthView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/HealthView.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/HealthView.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/Main Camera.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/Main Camera.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/Main Camera.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/ScoreView.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/ScoreView.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/Prefabs/ScoreView.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/Prefabs/ScoreView.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Ui/UI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameForReview/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Installers/GameInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Installers/GameInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Features/Operations/EndGameOperation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Features/Operations/EndGameOperation.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Features/Common/Stopwatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Balls/Stats/ColorSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Balls/Ball.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07C89F75-2069-4139-9913-32D3CF930D48/be/d9a0667f/RangeAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Balls/Stats/BallStats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/BallStatsDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Features/Balls/Stats/Decorators/IBallStatsProvider.cs" root0="FORCE_HIGHLIGHTING" />
@@ -212,8 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/UInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UpdateCollections/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAreaes/GameArea.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/IDamageables/Health.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Balls/ColorSuqeunce.cs" />
@@ -263,6 +121,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameUpdate/GameUpdates.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/EndGameView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Ui/UI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Features/Installers/GameInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Features/Operations/EndGameOperation.cs" />
       </list>
     </option>
   </component>
@@ -279,6 +139,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -399,6 +260,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="832" y="219" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1639308647427" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1642606334978">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1642606334978" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1639494418314">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
